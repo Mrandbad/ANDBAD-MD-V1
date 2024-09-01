@@ -1,83 +1,104 @@
 
 
 
+## _`DEPLOYMENT METHODS`_ 🛠
 
 
+#### DEPLOY TO HEROKU 
 
-
-
-
-
-
-
-
-
-
-
-Chill1. Get Session
-   <br>
-<a href='https://izumi.maskser.me' target="_blank"><img alt='Session' src='https://img.shields.io/badge/Session-V3100000?style=for-the-badge&logo=render&logoColor=white&labelColor=black&color=black'/></a>
-
-2. Fork This Repository
-   <br>
-<a href='https://github.com/partso/ROYAL-BOT-263/fork' target="_blank"><img alt='FORK' src='https://img.shields.io/badge/fork-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black&color=black'/></a>
-
-### Heroku
-1. Create account on Heroku
-   <br>
+1. If You don't have a account in Heroku. Create a account.
+    <br>
 <a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-2. Deploy on Heroku
-   <br>
-<a href='https://api.maskser.me/deploy' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-### Koyeb
-1. Create account on Koyeb
-   <br>
-<a href='https://koyeb.com' target="_blank"><img alt='Koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+2. Now Deploy
+    <br>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/Kingbega/bega-media-v1' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-2. Deploy on Koyeb
-   <br>
-<a href='https://api.maskser.me/koyeb' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
-### Render
-1. Create account on Render
-   <br>
-<a href='https://render.com' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=Render&logoColor=white'/></a>
+#### DEPLOY TO REPLIT
 
-2. Deploy on Render
-   <br>
-<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/partso/ROYAL-BOT-263' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=Render&logoColor=white'/></a>1. Get Session
-   <br>
-<a href='https://izumi.maskser.me' target="_blank"><img alt='Session' src='https://img.shields.io/badge/Session-V3100000?style=for-the-badge&logo=render&logoColor=white&labelColor=black&color=black'/></a>
+1. If You don't have an account in Replit. Create a account.
+    <br>
+<a href='https://replit.com/signup' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
-2. Fork This Repository
-   <br>
-<a href='https://github.com/partso/ROYAL-BOT-263/fork' target="_blank"><img alt='FORK' src='https://img.shields.io/badge/fork-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=black&color=black'/></a>
 
-### Heroku
-1. Create account on Heroku
-   <br>
-<a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+2. Now Deploy
+    <br>
+    <a href='https://repl.it/github/salmanytofficial/XLICON-V3-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+    
 
-2. Deploy on Heroku
-   <br>
-<a href='https://api.maskser.me/deploy' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-### Koyeb
-1. Create account on Koyeb
-   <br>
-<a href='https://koyeb.com' target="_blank"><img alt='Koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+#### DEPLOY TO OKTETO
 
-2. Deploy on Koyeb
-   <br>
-<a href='https://api.maskser.me/koyeb' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+1. If You don't have a account in Okteto. Create a account.
+    <br>
+<a href='https://www.okteto.com/pricing/?plan=SaaS' target="_blank"><img alt='Okteto' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=opera' width="96.35" height="28"/></a></p>
 
-### Render
-1. Create account on Render
-   <br>
-<a href='https://render.com' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=Render&logoColor=white'/></a>
 
-2. Deploy on Render
+2. Now Deploy
+    <br>
+<a href='https://cloud.okteto.com/login' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=opera' width="96.35" height="28"/></a></p>
+
+
+#### DEPLOY TO RENDER
+
+1. If You don't have a account in Render. Create a account.
+    <br>
+<a href='https://dashboard.render.com/register' target="_blank"><img alt='Render' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
+
+
+2. Now Deploy
+    <br>
+<a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
+
+
+#### DEPLOY TO MONGENIUS
+
+1. If You don't have a account in Mongenius. Create a account.
+    <br>
+<a href='https://studio.mogenius.com/user/registration' target="_blank"><img alt='Mongenius' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=genius' width="96.35" height="28"/></a></p>
+
+2. Now Deploy
+    <br>
+<a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=genius' width="96.35" height="28"/></a></p>
+
+
+
+#### DEPLOY TO REPLIT 
+
+
+1. If You don't have a account in Replit. Create a account.
+    <br>
+<a href='https://www.replit.com/' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=replit'/></a>
    <br>
-<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/partso/ROYAL-BOT-263' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=Render&logoColor=white'/></a>
+2. Now Deploy
+    <br>
+<a href='https://replit.com/github/A-S-W-I-N-S-P-A-R-K-Y/X-BOT-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-IMPORT-black?style=for-the-badge&logo=replit'/></a>
+
+## [![TIKTOK](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://vm.tiktok.com/ZMrTBwVEW/)
+
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+
+### `𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨 𝐆𝐨𝐝`🙏
+- Baraka-Bega
+- Ibrahim-Adams
+- Who Helping Me
+- Who Using This Bot
+- Text Me On WhatsApp [Wa-number](https://wa.me/255762190568)
+
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+
+## 🌴 *`BOT-OWNER`*
+<a href="https://github.com/Kingbega"><img src="https://github.com/Kingbega.png" width="250" height="250" alt="Baraka"/></a>
+
+
+## 🌴 *`MAIN-DEV`*
+<a href="https://github.com/ibrahimaitech"><img src="https://github.com/ibrahimaitech.png" width="250" height="250" alt="Ibrahim"/></a>
+
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
