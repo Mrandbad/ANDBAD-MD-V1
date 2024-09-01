@@ -134,7 +134,7 @@
 
 
 ### `𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨 𝐆𝐨𝐝`🙏
-- Baraka-Bega
+- mr andbad 
 - Ibrahim-Adams
 - Who Helping Me
 - Who Using This Bot
