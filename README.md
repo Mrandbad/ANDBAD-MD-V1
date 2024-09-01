@@ -29,18 +29,6 @@
     
 
 
-#### DEPLOY TO OKTETO
-
-1. If You don't have a account in Okteto. Create a account.
-    <br>
-<a href='https://www.okteto.com/pricing/?plan=SaaS' target="_blank"><img alt='Okteto' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=opera' width="96.35" height="28"/></a></p>
-
-
-2. Now Deploy
-    <br>
-<a href='https://cloud.okteto.com/login' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=opera' width="96.35" height="28"/></a></p>
-
-
 #### DEPLOY TO RENDER
 
 1. If You don't have a account in Render. Create a account.
@@ -76,7 +64,6 @@
     <br>
 <a href='https://replit.com/github/A-S-W-I-N-S-P-A-R-K-Y/X-BOT-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-IMPORT-black?style=for-the-badge&logo=replit'/></a>
 
-## [![TIKTOK](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://vm.tiktok.com/ZMrTBwVEW/)
 
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
@@ -87,18 +74,18 @@
 - Ibrahim-Adams
 - Who Helping Me
 - Who Using This Bot
-- Text Me On WhatsApp [Wa-number](https://wa.me/255762190568)
+- Text Me On WhatsApp [Wa-number](https://wa.me/255768318788)
 
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## 🌴 *`BOT-OWNER`*
+## 🌐 *`BOT-OWNER`*
+<a href="https://github.com/Mrandbad"><img src="https://github.com/Mrandbad.png" width="250" height="250" alt="Andbad"/></a>
+
+
+## 🌐 *`MAIN-DEV`*
 <a href="https://github.com/Kingbega"><img src="https://github.com/Kingbega.png" width="250" height="250" alt="Baraka"/></a>
-
-
-## 🌴 *`MAIN-DEV`*
-<a href="https://github.com/ibrahimaitech"><img src="https://github.com/ibrahimaitech.png" width="250" height="250" alt="Ibrahim"/></a>
 
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
