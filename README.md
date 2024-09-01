@@ -21,7 +21,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## _`ANDBAD-MD-V1 FEATURES`_ 🌐
+## _`ANDBAD-MD-V1 FEATURES`_ 🪶
 
 
 
@@ -144,11 +144,11 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## 🌐 *`BOT-OWNER`*
+## 😜 *`BOT-OWNER`*
 <a href="https://github.com/Mrandbad"><img src="https://github.com/Mrandbad.png" width="250" height="250" alt="Andbad"/></a>
 
 
-## 🌐 *`MAIN-DEV`*
+## 😜 *`MAIN-DEV`*
 <a href="https://github.com/Kingbega"><img src="https://github.com/Kingbega.png" width="250" height="250" alt="Baraka"/></a>
 
 
