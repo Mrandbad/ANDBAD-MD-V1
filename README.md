@@ -24,8 +24,11 @@
 
 1. [`FORK`](https://github.com/Mrandbad/ANDBAD-MD-V1/fork)
 
-2.`GET SESSION_ID USING`
+2. `GET SESSION_ID USING`
+
+ 
 [`QR SCANNER`](https://sessions-room-0f383a94422d.herokuapp.com/qr) 
+
 [`PAIRING CODE`](https://sessions-room-0f383a94422d.herokuapp.com/pair)
  
 
