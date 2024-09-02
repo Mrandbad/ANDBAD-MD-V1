@@ -43,7 +43,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## _`SESSION ID SITE`_ 🖐🤚
+## _`SESSION ID SITE`_ 👇
 
 
 1. Fork the repo
