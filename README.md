@@ -22,7 +22,8 @@
 
 #### SETUP 
 
-1. [`FORK`](https://github.com/Mrandbad/ANDBAD-MD-V1/fork)
+
+[`FORK`](https://github.com/Mrandbad/ANDBAD-MD-V1/fork)
 
 
  
