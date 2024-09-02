@@ -43,7 +43,7 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## _`SESSION ID SITE`_ 👇
+## _`GET SESSION ID`_ 👇
 
 
 1. Fork the repo
@@ -51,7 +51,7 @@
 <a href='https://github.com/Mrandbad/ANDBAD-MD-V1/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
-2. Get session id by (SCANNING QR1)
+2. Get session id by SCANNING QR1
     <br>
 <a href='https://sessions-room-0f383a94422d.herokuapp.com/qr' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
@@ -61,11 +61,7 @@
 <a href='https://sessions-room-0f383a94422d.herokuapp.com/pair' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id_2-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-
-## _`DEPLOYMENT METHODS`_ 🛠
+## _`DEPLOYMENT METHODS`_ 
 
 
 #### DEPLOY TO HEROKU 
@@ -133,22 +129,11 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-### `𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨 𝐆𝐨𝐝`🙏
-- mr andbad 
-- Ibrahim-Adams
-- Who Helping Me
-- Who Using This Bot
-- Text Me On WhatsApp [Wa-number](https://wa.me/255768318788)
-
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-
-## 😜 *`BOT-OWNER`*
+##  *`BOT-OWNER`*
 <a href="https://github.com/Mrandbad"><img src="https://github.com/Mrandbad.png" width="250" height="250" alt="Andbad"/></a>
 
 
-## 😜 *`MAIN-DEV`*
+##  *`MAIN-DEV`*
 <a href="https://github.com/Kingbega"><img src="https://github.com/Kingbega.png" width="250" height="250" alt="Baraka"/></a>
 
 
