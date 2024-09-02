@@ -22,11 +22,11 @@
 
 #### SETUP 
 
-1. [`FORK`](https://github.com/franceking1/Flash-Md/fork)
+1. [`FORK`](https://github.com/Mrandbad/ANDBAD-MD-V1/fork)
 
 2.`GET SESSION_ID USING`
-[`QR SCANNER`](https://the-flash-scanner.onrender.com) 
-[`PAIRING CODE`](https://king-france.vercel.app)
+[`QR SCANNER`](https://sessions-room-0f383a94422d.herokuapp.com/qr) 
+[`PAIRING CODE`](https://sessions-room-0f383a94422d.herokuapp.com/pair)
  
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
