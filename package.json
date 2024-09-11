@@ -1,13 +1,13 @@
 {
-  "name": "Bmw-md",
+  "name": "Andbad-md",
   "version": "2.0.0",
   "description": "",
-  "main": "ibrahim.js",
+  "main": "Andbad.js",
   "scripts": {
-    "test": "node ibrahim.js",
-    "s": "node ibrahim.js",
-    "bmwmd": "pm2 start ibrahim.js --attach",
-    "bmwmd": "pm2 start ibrahim.js --attach",
+    "test": "node Andbad.js",
+    "s": "node Andbad.js",
+    "bmwmd": "pm2 start Andbad.js --attach",
+    "bmwmd": "pm2 start Andbad.js --attach",
     "c": "tsc"
   },
   "keywords": [
@@ -18,7 +18,7 @@
     "whatsapp-bot",
     "bmw-md-boy"
   ],
-  "author": "ibraahadam",
+  "author": "Andbad",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
