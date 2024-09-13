@@ -32,33 +32,33 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭━━━━━━━━━━━✧{𝙇𝘼𝙕𝘼𝘾𝙆-𝙈𝘿}✧━━━━━◆
-│   *Prefix* : ${s.PREFIXE}
-│   *Owner* : ${s.OWNER_NAME}
-│   *Mode* : ${mode}
-│   *Commands* : ${cm.length}
-│   *year* : ©2024
-│   *country* : TANZANIA 🇹🇿
-│   *Memories* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│   *Plateform* : ${os.platform()}
-│   *Developer* : 𝐋𝐀𝐙𝐀𝐂𝐊
-│ 💫 _Lazack md a simple whatsapp bot give a 🌟_
-╰━━━━━━━━━━━━━🎶━━━━━━━━━━━━━━◆ \n\n`;
+╭━━━━━✧{𝙰𝙽𝙳𝙱𝙰𝙳 𝙼𝙳}✧━━━━◆
+┃   *Prefix* : ${s.PREFIXE}
+▋   *Owner* : ${s.OWNER_NAME}
+▋   *Mode* : ${mode}
+▋   *Commands* : ${cm.length}
+▋   *year* : ©2024
+▋   *country* : TANZANIA 🇹🇿
+▋   *Memories* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+▋   *Plateform* : ${os.platform()}
+▋   *Developer* : 𝙼𝚁 𝙰𝙽𝙳𝙱𝙰𝙳
+┃ 💫 _Lazack md a simple whatsapp bot give a 🌟_
+╰━━━━━━━━━━━━━━━━━━━◆ \n\n`;
     
 let menuMsg = `
 ╭━━━━━━━━━━━✧
-|  🤟 Hello ${nomAuteurMessage} 
-|    why can't you share this bot to you're friends?
+|   Hello ${nomAuteurMessage} 
+|    
 |               *List of commands :*
-| the following are all 𝙇𝘼𝙕𝘼𝘾𝙆-𝙈𝘿 commands
-╰━━━━━━━━━━━━━━━
+| the following are all commands
+╰━━━━━━━━━━━━━
 `;
 
     for (const cat in coms) {
-        menuMsg += `╭────• 💖 ${cat} •━━━━━•`;
+        menuMsg += `╭────•${cat}•━━━━━•`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-│ 📡 ${cmd}`;
+> ${cmd}`;
         }
         menuMsg += `
 ╰━━━━━━━━━━━━━━⊷ \n`
@@ -66,12 +66,12 @@ let menuMsg = `
 
     menuMsg += `
 ~~~~~~~~~~~~~~~~~            
-*╰━━━━━━━━━━━━━━🇹🇿━━━━━━━━━━━━━━━╯*
-|❀˖|  "visit the repo every two days more commands must be uploaded"
-|❀˖| 
-|❀˖|            *LAZACK-MD*
-|❀˖|   Believe in you bro you can                                          
-*╰━━━━━━━━━━━━━━🇹🇿━━━━━━━━━━━━━━━╯*
+*╰━━━━━━━━━━━━━━━━━━━━╯*
+
+𝓜𝓡 𝓐𝓝𝓓𝓑𝓐𝓓 𝓜𝓓
+           
+                                          
+*╰━━━━━━━━━━━━━━━━━━━━╯*
 `;
 
    var lien = mybotpic();
