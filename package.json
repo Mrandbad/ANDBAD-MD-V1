@@ -2,10 +2,10 @@
   "name": "Andbad-md",
   "version": "2.0.0",
   "description": "",
-  "main": "Andbad.js",
+  "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "s": "node Andbad.js",
+    "s": "node index.js",
     "bmwmd": "pm2 start index.js --attach",
     "bmwmd": "pm2 start index.js --attach",
     "c": "tsc"
