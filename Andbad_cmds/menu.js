@@ -32,53 +32,32 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭━━━━━✧{𝙰𝙽𝙳𝙱𝙰𝙳 𝙼𝙳}✧━━━━◆
-┃   *Prefix* : ${s.PREFIXE}
-▋   *Owner* : ${s.OWNER_NAME}
-▋   *Mode* : ${mode}
-▋   *Commands* : ${cm.length}
-▋   *year* : ©2024
-▋   *country* : TANZANIA 🇹🇿
-▋   *Memories* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-▋   *Plateform* : ${os.platform()}
-▋   *Developer* : 𝙼𝚁 𝙰𝙽𝙳𝙱𝙰𝙳
-┃ 💫 _Lazack md a simple whatsapp bot give a 🌟_
-╰━━━━━━━━━━━━━━━━━━━◆ \n\n`;
+> ANDBAD-MD AVAILABLE MENUS 
+╭─────────────────
+│❒⁠⁠⁠⁠╭─────────────
+│❒⁠⁠⁠⁠│▸ *MENU* 
+│❒⁠⁠⁠⁠│▸ *MENU2* 
+│❒⁠⁠⁠⁠│▸ *BUGMENU*
+│❒⁠⁠⁠⁠╰──────────────
+│❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
+│❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
+│❒⁠⁠⁠⁠│▸ *THEME* : *ANDBADTHEME*
+│❒⁠⁠⁠⁠╰──────────────
+╰──────────────────\n`;
     
 let menuMsg = `
-╭━━━━━━━━━━━✧
-|   Hello ${nomAuteurMessage} 
-|    
-|               *List of commands :*
-| the following are all commands
-╰━━━━━━━━━━━━━
-`;
-
-    for (const cat in coms) {
-        menuMsg += `╭────•${cat}•━━━━━•`;
-        for (const cmd of coms[cat]) {
-            menuMsg += `
-> ${cmd}`;
-        }
-        menuMsg += `
-╰━━━━━━━━━━━━━━⊷ \n`
-    }
-
-    menuMsg += `
-~~~~~~~~~~~~~~~~~            
-*╰━━━━━━━━━━━━━━━━━━━━╯*
-
-𝓜𝓡 𝓐𝓝𝓓𝓑𝓐𝓓 𝓜𝓓
-           
-                                          
-*╰━━━━━━━━━━━━━━━━━━━━╯*
-`;
+╭─────────❒⁠⁠⁠⁠
+   *𝐓𝐇𝐀 𝐁𝐋𝐀𝐂𝐊*
+╰─────────❒
+   ⁠⁠⁠⁠MADE EASY BY ANDBAD
+╰───────────────────⏣`;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *kavishanmd*, déveloper kavishan Tech" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -88,7 +67,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *kavishanmd*, déveloper kavishan Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -101,4 +80,4 @@ else {
     
 }
 
-});
+}); 
