@@ -2,7 +2,7 @@
   "name":"ANDBAD MD",
   "description":"Deploy now your bot, ANDBAD was developed by MrAndbad himself.Make sure you fill all valuables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/fd124f7e9271111c3bcc1.jpg",
+  "logo":"https://i.imgur.com/L4U2K76.jpeg",
   "repository":"https://github.com/Mrandbad/ANDBAD-MD-V1",
   "succes_url":"/",
   "stack":"container",
@@ -42,7 +42,7 @@
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/7d07f6bb6562e3c7b9599.mp4",
+      "value":"https://i.imgur.com/L4U2K76.jpeg",
       "required":false
        
      },
@@ -76,14 +76,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "𝐈𝐛𝐫𝐚𝐡𝐢𝐦 𝐀𝐝𝐚𝐦𝐬"
+    "value": "ANDBAD TEAM SUPPORT"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254739937062,254710772666"
+    "value": "255768318788,255734980103"
   },
     "WARN_COUNT":
   {
