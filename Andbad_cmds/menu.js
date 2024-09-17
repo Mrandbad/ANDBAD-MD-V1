@@ -46,7 +46,7 @@ const date = moment().format('DD/MM/YYYY');
 │❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
 │❒⁠⁠⁠⁠│▸ *THEME* : *ANDBADTHEMES*
 │❒⁠⁠⁠⁠╰──────────────
-╰──────────────────\n${readmore}`;
+╰──────────────────\n`;
     
 let menuMsg = `
 
