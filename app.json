@@ -1,9 +1,9 @@
 {
-  "name":"V-6-BMW-XMD",
-  "description":"Deploy now your bot, Bmw was developed by Ibrahim Adams.Make sure you fill all valuables to avoid bot from sleeping. ",
+  "name":"ANDBAD MD",
+  "description":"Deploy now your bot, ANDBAD was developed by MrAndbad himself.Make sure you fill all valuables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://telegra.ph/file/fd124f7e9271111c3bcc1.jpg",
-  "repository":"https://github.com/ibrahimaitech/BMW-MD",
+  "repository":"https://github.com/Mrandbad/ANDBAD-MD-V1",
   "succes_url":"/",
   "stack":"container",
   "env":{
@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":" 𝐁𝐌𝐖-𝐗𝐌𝐃",
+      "value":" ANDBAD MD",
       "required":false
 
     } ,
