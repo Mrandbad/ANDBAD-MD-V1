@@ -53,7 +53,12 @@ let menuMsg = `
      > ANDBAD BOTS TEAM
 
 ❒────────────────────❒`;
-    
+    let msgs = generateWAMessageFromContent(m.chat, {
+  viewOnceMessage: {
+    message: {
+        "messageContextInfo": {
+          "deviceListMetadata": {},
+          "deviceListMetadataVersion": 2
     },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
