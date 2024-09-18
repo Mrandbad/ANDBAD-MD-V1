@@ -29,7 +29,7 @@
  
 [`QR SCANNER`](https://sessions-room-0f383a94422d.herokuapp.com/qr) 
 
-[`PAIRING CODE`](https://sessions-room-0f383a94422d.herokuapp.com/pair)
+[`PAIRING CODE`](https://andbad-qr.onrender.com)
  
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
