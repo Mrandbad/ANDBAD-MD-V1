@@ -51,7 +51,7 @@ zokou({ nomCom: "owner", categorie: "General", reaction: "🚘" }, async (dest, 
   }
 });
 
-zokou({ nomCom: "dev", categorie: "General", reaction: "🚘" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "dev", categorie: "General", reaction: "🎣" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
@@ -95,7 +95,7 @@ else {
 zokou({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
-  repondre("THANK YOU FOR CHOOSING ANDBAD MD, HERE ARE OUR SUPPORTIVE CHANNEL\n\n ☉ CHANNEL LINK IS HERE ☉ \n\n❒⁠⁠⁠⁠[https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m") 
-  await zk.sendMessage(auteurMessage,{text : `THANK YOU FOR CHOOSING ANDBAD MD,MAKE SURE YOU FOLLOW THESE CHANNELS. `},{quoted :ms})
+  repondre("THANK YOU FOR CHOOSING ANDBAD MD, HERE ARE OUR SUPPORTIVE CHANNEL\n\n ☉ CHANNEL LINK IS HERE ☉ \n\n❒⁠⁠⁠⁠[https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m]") 
+  await zk.sendMessage(auteurMessage,{text : `THANK YOU FOR CHOOSING ANDBAD MD,MAKE SURE YOU FOLLOW THESE CHANNELS.\n\n https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m `},{quoted :ms})
 
 })
