@@ -27,7 +27,7 @@
 
 
  
-[`QR SCANNER`](https://sessions-room-0f383a94422d.herokuapp.com/qr) 
+[`QR SCANNER`]([(https://andbad-qr.onrender.com/qr)]) 
 
 [`PAIRING CODE`](https://andbad-qr.onrender.com)
  
