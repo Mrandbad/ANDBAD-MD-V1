@@ -1,5 +1,5 @@
 {
-  "name":"ANDBAD MD",
+  "name":"MONEY HUNTER",
   "description":"Deploy now your bot, ANDBAD was developed by MrAndbad himself.Make sure you fill all valuables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.imgur.com/L4U2K76.jpeg",
@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":" ANDBAD MD",
+      "value":" MONEYHUNTER MD",
       "required":false
 
     } ,
@@ -49,8 +49,8 @@
     "PUBLIC_MODE":
     {
       "description":"type yes to put your bot on public mode or no to put it on private mod",
-      "value":"yes",
-      "required":false
+      "value":"no",
+      "required":true
     }
 	,
     "HEROKU_APY_KEY": {
@@ -74,16 +74,16 @@
     "OWNER_NAME":
     {
     
-    "desc": "Your Name",
+    "desc": "MONEYHUNTER",
     "required": false,
-    "value": "ANDBAD TEAM SUPPORT"
+    "value": "MONEYHUNTER TEAM SUPPORT"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255768318788,255734980103"
+    "value": "255615486000,255712260647"
   },
     "WARN_COUNT":
   {
@@ -99,8 +99,8 @@
   },
   "PRESENCE":{
     "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"",  
-    "required": false
+    "value":"no",  
+    "required": true
   },
   "ANTI_DELETE_MESSAGE" : {
     "description": "if you want to enable anti delete message put yes else put no",
