@@ -71,14 +71,14 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("there is no alive for this bot") ; return};
+        if(!superUser) { repondre("AM ALIVE MOTHER FUCKER") ; return};
 
-      await   repondre("You have not yet saved your alive, to do this;  enter after alive your message and your image or video link in this context: .alive message;lien");
+      await   repondre("MR ANDBAD MD IS ALIVE AT THE MOMMENT DEPLOY IT NOW AND ENJOY");
          repondre("don't do fake thinks :)")
      }
  } else {
 
-    if(!superUser) { repondre ("Only the owner can  modify the alive") ; return};
+    if(!superUser) { repondre ("MR ANDBAD ONLY") ; return};
 
   
     const texte = arg.join(' ').split(';')[0];
@@ -88,7 +88,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre(' FVCK YOU IF YOU DONT FORK THIS BOT. ')
+repondre(' FUCK YOU IF YOU DONT FORK THIS BOT. ')
 
 }
     });
