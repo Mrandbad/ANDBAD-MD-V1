@@ -377,7 +377,7 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
                     } else {
                   await ajouterOuMettreAJourJid(dest,"oui");
                 
-              repondre("ANDBAD antilink is activated successfully") }
+              repondre("ANDBAD MD ACTIVATED ANTILINK SUCCESSFULLY") }
      
             } else if (arg[0] === "off") {
 
@@ -387,7 +387,7 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
                 repondre("The antilink has been successfully deactivated");
                 
               } else {
-                repondre("antilink is not activated for this group");
+                repondre("*ANDBAD MD ACTIVATED ANTILINK SUCCESSFULLY*");
               }
             } else if (arg.join('').split("/")[0] === 'action') {
                             
