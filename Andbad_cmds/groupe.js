@@ -249,7 +249,7 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
         if (zkad) {
           if (membre) {
             if (admin == false) {
-              const gifLink = "https://raw.githubusercontent.com/Mrandbad/ANDBAD=MD-V1/main/andbad/remover.gif"
+              const gifLink = "https://raw.githubusercontent.com/Mrandbad/ANDBAD-MD-V1/main/andbad/remover.gif"
               var sticker = new Sticker(gifLink, {
                 pack: 'Zokou-Md', // The pack name
                 author: nomAuteurMessage, // The author name
