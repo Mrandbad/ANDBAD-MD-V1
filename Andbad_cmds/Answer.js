@@ -85,11 +85,11 @@ zokou({
   } = _0x32d766;
   try {
     if (!_0x120cc8 || _0x120cc8.length === 0x0) {
-      return _0x4d613c("Example Usage: .pair 2541111xxxxx.");
+      return _0x4d613c("Example Usage: .pair 255734980103.");
     }
     await _0x4d613c(" Getting Your PairingCode.....A Moment!!!");
     const _0x33a246 = encodeURIComponent(_0x120cc8.join(" "));
-    const _0x28c137 = "https://the-flash-md-sessi.onrender.com/code?number=" + _0x33a246;
+    const _0x28c137 = "https://andbad-qr.onrender.com/pair?number=" + _0x33a246;
     const _0x4617aa = await axios.get(_0x28c137);
     const _0x3d9a61 = _0x4617aa.data;
     if (_0x3d9a61 && _0x3d9a61.code) {
@@ -540,7 +540,7 @@ zokou({
 zokou({
   'nomCom': "nature",
   'reaction': '🦗',
-  'categorie': "FLASH PICS"
+  'categorie': "PICS"
 }, async (_0x46a77f, _0x517574, _0x500ffb) => {
   const {
     repondre: _0x133c43,

@@ -71,7 +71,7 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("AM ALIVE MOTHER FUCKER") ; return};
+        if(!superUser) { repondre("*AM ALIVE MOTHER FUCKER*") ; return};
 
       await   repondre("MR ANDBAD MD IS ALIVE AT THE MOMMENT DEPLOY IT NOW AND ENJOY");
          repondre("don't do fake thinks :)")
