@@ -1,1 +1,46 @@
-function _0xd21d(){const _0x282a81=['feels_like','temp_min','36VpAbqv','humidity','°C\x0a🌡️\x20Feels\x20Like:\x20','\x0a🌪️\x20Longitude:\x20','🌡️','sunset','Give\x20me\x20location...','https://api.openweathermap.org/data/2.5/weather','temp','1twTHhf','13282973EYmCWa','error','description','sunrise','°C\x0a🌡️\x20Max\x20Temperature:\x20','\x0a❄️\x20Humidity:\x20','12WvTIxZ','370610IqArVr','060a6bcfa19809c2cd4d97a212b19273','axios','\x0a\x0a*°Powered\x20by\x20FLASH-MD*','data','56KARdur','sys','Error\x20fetching\x20weather\x20data:','lon','join','speed','metric','toLocaleTimeString','\x0a🌅\x20Sunset:\x20','168lgoZUc','\x20m/s\x0a🌧️\x20Rain\x20Volume\x20(last\x20hour):\x20','776462NQLlQs','%\x0a🌄\x20Sunrise:\x20','An\x20error\x20occurred\x20while\x20fetching\x20the\x20weather\x20data.\x20Please\x20try\x20again.','°C\x0a🌡️\x20Min\x20Temperature:\x20','main','❄️\x20Weather\x20in\x20','rain','82895CmdHUA','get','1180746XyfypI','wind','coord','%\x0a🌀\x20Wind\x20Speed:\x20','../france/king','\x0a\x0a🗺\x20Country:\x20','114568NLozgI','1320489XerGEy','\x0a\x0a🌡️\x20Temperature:\x20','weather','\x0a🌫️\x20Latitude:\x20','°C\x0a📝\x20Description:\x20'];_0xd21d=function(){return _0x282a81;};return _0xd21d();}const _0x8b14ac=_0x5374;(function(_0x15a5cb,_0x4fd3ba){const _0x2de747=_0x5374,_0x196931=_0x15a5cb();while(!![]){try{const _0x1d3a72=-parseInt(_0x2de747(0x1b2))/0x1*(-parseInt(_0x2de747(0x1ca))/0x2)+parseInt(_0x2de747(0x1da))/0x3+-parseInt(_0x2de747(0x1c8))/0x4*(-parseInt(_0x2de747(0x1d1))/0x5)+-parseInt(_0x2de747(0x1d3))/0x6+parseInt(_0x2de747(0x1bf))/0x7*(parseInt(_0x2de747(0x1d9))/0x8)+-parseInt(_0x2de747(0x1a9))/0x9*(-parseInt(_0x2de747(0x1ba))/0xa)+parseInt(_0x2de747(0x1b3))/0xb*(-parseInt(_0x2de747(0x1b9))/0xc);if(_0x1d3a72===_0x4fd3ba)break;else _0x196931['push'](_0x196931['shift']());}catch(_0x28e9aa){_0x196931['push'](_0x196931['shift']());}}}(_0xd21d,0x5d8d6));function _0x5374(_0x1fef4f,_0x5a02f1){const _0xd21d86=_0xd21d();return _0x5374=function(_0x53748f,_0x5f5441){_0x53748f=_0x53748f-0x1a7;let _0x3ad682=_0xd21d86[_0x53748f];return _0x3ad682;},_0x5374(_0x1fef4f,_0x5a02f1);}const axios=require(_0x8b14ac(0x1bc)),{king}=require(_0x8b14ac(0x1d7));king({'nomCom':'weather','reaction':_0x8b14ac(0x1ad),'categorie':'Search'},async(_0x34a5bf,_0x5b25ba,_0x27b5ed)=>{const _0x3f80dd=_0x8b14ac,{repondre:_0x8466ad,arg:_0x3dfdee,ms:_0x2b1148}=_0x27b5ed,_0x146eda=_0x3dfdee[_0x3f80dd(0x1c3)]('\x20');if(!_0x146eda)return _0x8466ad(_0x3f80dd(0x1af));try{const _0x335bfd=await axios[_0x3f80dd(0x1d2)](_0x3f80dd(0x1b0),{'params':{'q':_0x146eda,'units':_0x3f80dd(0x1c5),'appid':_0x3f80dd(0x1bb),'language':'en'}}),_0x222c8f=_0x335bfd[_0x3f80dd(0x1be)],_0x2a4b2d=_0x222c8f['name'],_0x29b590=_0x222c8f['main'][_0x3f80dd(0x1b1)],_0x84bb24=_0x222c8f[_0x3f80dd(0x1ce)][_0x3f80dd(0x1a7)],_0x4a81f2=_0x222c8f[_0x3f80dd(0x1ce)][_0x3f80dd(0x1a8)],_0x3e4cba=_0x222c8f['main']['temp_max'],_0x4825d2=_0x222c8f[_0x3f80dd(0x1dc)][0x0][_0x3f80dd(0x1b5)],_0x5d9de8=_0x222c8f[_0x3f80dd(0x1ce)][_0x3f80dd(0x1aa)],_0x5d6085=_0x222c8f[_0x3f80dd(0x1d4)][_0x3f80dd(0x1c4)],_0x576d7b=_0x222c8f[_0x3f80dd(0x1d0)]?_0x222c8f['rain']['1h']:0x0,_0x2b2fae=_0x222c8f['clouds']['all'],_0x49cd4e=new Date(_0x222c8f['sys'][_0x3f80dd(0x1b6)]*0x3e8),_0x2d52fe=new Date(_0x222c8f[_0x3f80dd(0x1c0)][_0x3f80dd(0x1ae)]*0x3e8);await _0x8466ad(_0x3f80dd(0x1cf)+_0x2a4b2d+_0x3f80dd(0x1db)+_0x29b590+_0x3f80dd(0x1ab)+_0x84bb24+_0x3f80dd(0x1cd)+_0x4a81f2+_0x3f80dd(0x1b7)+_0x3e4cba+_0x3f80dd(0x1de)+_0x4825d2+_0x3f80dd(0x1b8)+_0x5d9de8+_0x3f80dd(0x1d6)+_0x5d6085+_0x3f80dd(0x1c9)+_0x576d7b+'\x20mm\x0a☁️\x20Cloudiness:\x20'+_0x2b2fae+_0x3f80dd(0x1cb)+_0x49cd4e[_0x3f80dd(0x1c6)]()+_0x3f80dd(0x1c7)+_0x2d52fe[_0x3f80dd(0x1c6)]()+_0x3f80dd(0x1dd)+_0x222c8f[_0x3f80dd(0x1d5)]['lat']+_0x3f80dd(0x1ac)+_0x222c8f[_0x3f80dd(0x1d5)][_0x3f80dd(0x1c2)]+_0x3f80dd(0x1d8)+_0x222c8f[_0x3f80dd(0x1c0)]['country']+_0x3f80dd(0x1bd));}catch(_0x363b1d){console[_0x3f80dd(0x1b4)](_0x3f80dd(0x1c1),_0x363b1d),await _0x8466ad(_0x3f80dd(0x1cc));}});
+const axios = require("axios");
+const {
+  king
+} = require("../framework/zokou");
+king({
+  'nomCom': 'weather',
+  'reaction': "🌡️",
+  'categorie': 'Search'
+}, async (_0x34a5bf, _0x5b25ba, _0x27b5ed) => {
+  const {
+    repondre: _0x8466ad,
+    arg: _0x3dfdee,
+    ms: _0x2b1148
+  } = _0x27b5ed;
+  const _0x146eda = _0x3dfdee.join(" ");
+  if (!_0x146eda) {
+    return _0x8466ad("Give me location...");
+  }
+  try {
+    const _0x335bfd = await axios.get("https://api.openweathermap.org/data/2.5/weather", {
+      'params': {
+        'q': _0x146eda,
+        'units': "metric",
+        'appid': "060a6bcfa19809c2cd4d97a212b19273",
+        'language': 'en'
+      }
+    });
+    const _0x222c8f = _0x335bfd.data;
+    const _0x2a4b2d = _0x222c8f.name;
+    const _0x29b590 = _0x222c8f.main.temp;
+    const _0x84bb24 = _0x222c8f.main.feels_like;
+    const _0x4a81f2 = _0x222c8f.main.temp_min;
+    const _0x3e4cba = _0x222c8f.main.temp_max;
+    const _0x4825d2 = _0x222c8f.weather[0x0].description;
+    const _0x5d9de8 = _0x222c8f.main.humidity;
+    const _0x5d6085 = _0x222c8f.wind.speed;
+    const _0x576d7b = _0x222c8f.rain ? _0x222c8f.rain['1h'] : 0x0;
+    const _0x2b2fae = _0x222c8f.clouds.all;
+    const _0x49cd4e = new Date(_0x222c8f.sys.sunrise * 0x3e8);
+    const _0x2d52fe = new Date(_0x222c8f.sys.sunset * 0x3e8);
+    await _0x8466ad("❄️ Weather in " + _0x2a4b2d + "\n\n🌡️ Temperature: " + _0x29b590 + "°C\n🌡️ Feels Like: " + _0x84bb24 + "°C\n🌡️ Min Temperature: " + _0x4a81f2 + "°C\n🌡️ Max Temperature: " + _0x3e4cba + "°C\n📝 Description: " + _0x4825d2 + "\n❄️ Humidity: " + _0x5d9de8 + "%\n🌀 Wind Speed: " + _0x5d6085 + " m/s\n🌧️ Rain Volume (last hour): " + _0x576d7b + " mm\n☁️ Cloudiness: " + _0x2b2fae + "%\n🌄 Sunrise: " + _0x49cd4e.toLocaleTimeString() + "\n🌅 Sunset: " + _0x2d52fe.toLocaleTimeString() + "\n🌫️ Latitude: " + _0x222c8f.coord.lat + "\n🌪️ Longitude: " + _0x222c8f.coord.lon + "\n\n🗺 Country: " + _0x222c8f.sys.country + "\n\n*°Powered by FLASH-MD*");
+  } catch (_0x363b1d) {
+    console.error("Error fetching weather data:", _0x363b1d);
+    await _0x8466ad("An error occurred while fetching the weather data. Please try again.");
+  }
+});
