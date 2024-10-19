@@ -2,7 +2,7 @@ const axios = require("axios");
 const {
   zokou
 } = require("../framework/zokou");
-king({
+zokou({
   'nomCom': 'weather',
   'reaction': "🌡️",
   'categorie': 'Search'
@@ -38,7 +38,7 @@ king({
     const _0x2b2fae = _0x222c8f.clouds.all;
     const _0x49cd4e = new Date(_0x222c8f.sys.sunrise * 0x3e8);
     const _0x2d52fe = new Date(_0x222c8f.sys.sunset * 0x3e8);
-    await _0x8466ad("❄️ Weather in " + _0x2a4b2d + "\n\n🌡️ Temperature: " + _0x29b590 + "°C\n🌡️ Feels Like: " + _0x84bb24 + "°C\n🌡️ Min Temperature: " + _0x4a81f2 + "°C\n🌡️ Max Temperature: " + _0x3e4cba + "°C\n📝 Description: " + _0x4825d2 + "\n❄️ Humidity: " + _0x5d9de8 + "%\n🌀 Wind Speed: " + _0x5d6085 + " m/s\n🌧️ Rain Volume (last hour): " + _0x576d7b + " mm\n☁️ Cloudiness: " + _0x2b2fae + "%\n🌄 Sunrise: " + _0x49cd4e.toLocaleTimeString() + "\n🌅 Sunset: " + _0x2d52fe.toLocaleTimeString() + "\n🌫️ Latitude: " + _0x222c8f.coord.lat + "\n🌪️ Longitude: " + _0x222c8f.coord.lon + "\n\n🗺 Country: " + _0x222c8f.sys.country + "\n\n*°Powered by FLASH-MD*");
+    await _0x8466ad("❄️ Weather in " + _0x2a4b2d + "\n\n🌡️ Temperature: " + _0x29b590 + "°C\n🌡️ Feels Like: " + _0x84bb24 + "°C\n🌡️ Min Temperature: " + _0x4a81f2 + "°C\n🌡️ Max Temperature: " + _0x3e4cba + "°C\n📝 Description: " + _0x4825d2 + "\n❄️ Humidity: " + _0x5d9de8 + "%\n🌀 Wind Speed: " + _0x5d6085 + " m/s\n🌧️ Rain Volume (last hour): " + _0x576d7b + " mm\n☁️ Cloudiness: " + _0x2b2fae + "%\n🌄 Sunrise: " + _0x49cd4e.toLocaleTimeString() + "\n🌅 Sunset: " + _0x2d52fe.toLocaleTimeString() + "\n🌫️ Latitude: " + _0x222c8f.coord.lat + "\n🌪️ Longitude: " + _0x222c8f.coord.lon + "\n\n🗺 Country: " + _0x222c8f.sys.country + "\n\n*°Powered by andbad botz*");
   } catch (_0x363b1d) {
     console.error("Error fetching weather data:", _0x363b1d);
     await _0x8466ad("An error occurred while fetching the weather data. Please try again.");
