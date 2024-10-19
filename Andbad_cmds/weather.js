@@ -1,6 +1,6 @@
 const axios = require("axios");
 const {
-  king
+  zokou
 } = require("../framework/zokou");
 king({
   'nomCom': 'weather',
