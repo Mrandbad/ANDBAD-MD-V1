@@ -34,7 +34,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*POWERED BY ANDBA TEAM* 
+POWERED BY ANDBAD TEAM 
 ╭─────────────────
 │❒⁠⁠⁠⁠╭─────────────
 │❒⁠⁠⁠⁠│▸ *THIS ARE MR ANDBAD GROUP LINKS* 
