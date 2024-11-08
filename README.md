@@ -27,7 +27,7 @@
 
 
  
-[`QR SCANNER`]([( https://lazack-creds.onrender.com/qr)]) 
+[`QR SCANNER`]([(https://lazack-creds.onrender.com/qr)]) 
 
 [`PAIRING CODE`]( https://lazack-creds.onrender.com)
  
