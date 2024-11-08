@@ -1,6 +1,9 @@
+
 const axios = require('axios');
 const fs = require('fs');
 const { zokou } = require("../framework/zokou");
+
+const JAMENDO_API_KEY = '	9d0eede5'; // Replace with your Jamendo API key
 
 zokou({
   nomCom: "play2",
@@ -17,24 +20,26 @@ zokou({
   try {
     let topo = arg.join(" ");
     
-    // Make sure to use the correct variable for the query
-    const response = await axios.get(`https://itzpire.com/download/play-youtube?title=${topo}`);
+    // Use Jamendo API to search for music
+    const response = await axios.get(`https://api.jamendo.com/v3.0/tracks/?client_id=${JAMENDO_API_KEY}&name=${encodeURIComponent(topo)}&limit=1`);
     const tracks = response.data.results;
 
     if (tracks && tracks.length > 0) {
       const track = tracks[0];
-      const audioUrl = track.download; // Assuming the API provides a download link
+      const audioUrl = track.download[0].url; // Get the download URL
+      const trackName = track.name;
+      const artistName = track.artist_name;
 
       let infoMess = {
         image: { url: track.image },
-        caption: `*Song Name:* _${track.name}_\n*Artist:* _${track.artist}_\n*Url:* _${audioUrl}_`
+        caption: `*Song Name:* _${trackName}_\n*Artist:* _${artistName}_\n*Url:* _${audioUrl}_`
       };
 
       zk.sendMessage(origineMessage, infoMess, { quoted: ms });
 
       // Download the audio file
       const audioStream = (await axios.get(audioUrl, { responseType: 'stream' })).data;
-      const filename = `${track.name}.mp3`; // Dynamic filename based on track name
+      const filename = `${trackName}.mp3`; // Dynamic filename based on track name
 
       const fileStream = fs.createWriteStream(filename);
       audioStream.pipe(fileStream);
