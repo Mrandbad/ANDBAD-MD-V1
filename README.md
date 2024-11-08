@@ -27,9 +27,9 @@
 
 
  
-[`QR SCANNER`]([(https://andbad-qr.onrender.com/qr)]) 
+[`QR SCANNER`]([( https://lazack-creds.onrender.com/qr)]) 
 
-[`PAIRING CODE`](https://andbad-qr.onrender.com)
+[`PAIRING CODE`]( https://lazack-creds.onrender.com)
  
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
