@@ -18,7 +18,7 @@ zokou({
     let topo = arg.join(" ");
     
     // Replace with your API endpoint and parameters
-    const response = await axios.get(`https://api.jamendo.com/v3.0/tracks/?client_id=YOUR_CLIENT_ID&search=${topo}`);
+    const response = await axios.get(`https://itzpire.com/download/play-youtube?title=${topo}`);
     const tracks = response.data.results;
 
     if (tracks && tracks.length > 0) {
