@@ -27,7 +27,7 @@
 
 
  
-[`QR SCANNER`]((https://andbad-qr-k71b.onrender.com)/qr)]) 
+[`QR SCANNER`]((https://andbad-qr-k71b.onrender.com)/qr)
 
 [`PAIRING CODE`](https://andbad-qr-k71b.onrender.com)
  
