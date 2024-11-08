@@ -17,8 +17,8 @@ zokou({
   try {
     let topo = arg.join(" ");
     
-    // Replace with your API endpoint and parameters
-    const response = await axios.get(`https://itzpire.com/download/play-youtube?title=${query}`);
+    // Make sure to use the correct variable for the query
+    const response = await axios.get(`https://itzpire.com/download/play-youtube?title=${topo}`);
     const tracks = response.data.results;
 
     if (tracks && tracks.length > 0) {
@@ -40,8 +40,17 @@ zokou({
       audioStream.pipe(fileStream);
 
       fileStream.on('finish', () => {
-        zk.sendMessage(origineMessage, { audio: { url: filename }, mimetype: 'audio/mp4' }, { quoted: ms, ptt: false });
-        console.log("Audio file sent!");
+        // Send the audio file
+        zk.sendMessage(origineMessage, { audio: { url: filename }, mimetype: 'audio/mp4' }, { quoted: ms, ptt: false })
+          .then(() => {
+            // Delete the file after sending
+            fs.unlinkSync(filename);
+            console.log("Audio file sent and deleted!");
+          })
+          .catch(err => {
+            console.error('Error sending audio file:', err);
+            repondre('An error occurred while sending the audio file.');
+          });
       });
 
       fileStream.on('error', (error) => {
