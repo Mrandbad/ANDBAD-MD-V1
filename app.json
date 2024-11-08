@@ -76,14 +76,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "ANDBAD TEAM SUPPORT"
+    "value": "𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃 SUPPORT"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255768318788,255734980103"
+    "value": "255768318788"
   },
     "WARN_COUNT":
   {
