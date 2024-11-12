@@ -27,7 +27,7 @@ zokou({
         image: {
           url: firstVideo.thumbnail
         },
-        caption: "YOUTUBE SEARCH\n\n © ANDBAD MD"
+        caption: "YOUTUBE SEARCH\n\n © 𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
       };
 
       // Send the thumbnail image
@@ -41,7 +41,7 @@ zokou({
         mimetype: "video/mp4"
       }, { quoted: ms });
 
-      repondre("Downloaded Successfully ✅");
+      repondre("Downloaded Successfully✅");
     } else {
       repondre("No videos found.");
     }
@@ -79,7 +79,7 @@ zokou({
         image: {
           url: firstVideo.thumbnail
         },
-        caption: "YOUTUBE SEARCH\n\n © ANDBAD MD"
+        caption: "YOUTUBE SEARCH\n\n ©𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
       };
 
       // Send the thumbnail image
@@ -138,7 +138,7 @@ zokou({
           image: {
             url: firstVideo.thumbnail
           },
-          caption: "YOUTUBE SEARCH\n\n © ANDBAD MD"
+          caption: "YOUTUBE SEARCH\n\n ©𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
         };
 
         // Send the thumbnail image
