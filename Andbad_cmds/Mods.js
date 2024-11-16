@@ -380,46 +380,51 @@ if(!verifGroupe) {repondre('order reservation for groups' ) ; return };
       repondre('Please provide a message to send with --dm option.');
       break;
     }
-  
-    sendDirectMessagesToAllGroups(dmMessage)
-      .then(() => {
-        repondre('done');
-      })
-      .catch((error) => {
-        repondre(`Failed to send message: ${error.message}`);
-      });
+
+    try {
+      await sendDirectMessagesToAllGroups(dmMessage);
+      repondre('Broadcast to individual members completed successfully.');
+    } catch (error) {
+      repondre(`Failed to send message: ${error.message}`);
+    }
   } else {
-    
-    broadcastToAllGroups(message)
-      .then(() => {
-        repondre('done');
-      })
-      .catch((error) => {
-        repondre(`Failed to broadcast message: ${error.message}`);
-      });
+    try {
+      await broadcastToAllGroups(message);
+      repondre('Broadcast to all groups completed successfully.');
+    } catch (error) {
+      repondre(`Failed to broadcast message: ${error.message}`);
+    }
   }
   break;
 
 async function broadcastToAllGroups(message) {
-  const groups = await getAllGroups(); 
+  try {
+    const groups = await getAllGroups();
 
-  for (const group of groups) {
-    await sendMessageToGroup(group, message); 
+    for (const group of groups) {
+      await sendMessageToGroup(group, message);
+    }
+  } catch (error) {
+    throw new Error(`Error broadcasting to all groups: ${error.message}`);
   }
 }
 
 async function sendDirectMessagesToAllGroups(message) {
-  const groups = await getAllGroups(); 
+  try {
+    const groups = await getAllGroups();
 
-  for (const group of groups) {
-    const members = await getGroupMembers(group); 
+    for (const group of groups) {
+      const members = await getGroupMembers(group);
 
-    for (const member of members) {
-      await sendDirectMessage(member, message); 
+      for (const member of members) {
+        await sendDirectMessage(member, message);
+      }
     }
+  } catch (error) {
+    throw new Error(`Error sending direct messages to all members: ${error.message}`);
   }
 }
- 
+
               case 'del':
                     
   if (groupalreadyBan) {
