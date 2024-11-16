@@ -50,7 +50,7 @@ const date = moment().format('DD/MM/YYYY');
   `;
     
 let menuMsg = `
-     MADE EASY BY MR ANDBAD
+     MADE EASY BY 𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃
 
 ❒────────────────────❒`;
 
