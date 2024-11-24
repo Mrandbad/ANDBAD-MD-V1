@@ -76,14 +76,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃 SUPPORT"
+    "value": "𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255768318788"
+    "value": "255783394967"
   },
     "WARN_COUNT":
   {
