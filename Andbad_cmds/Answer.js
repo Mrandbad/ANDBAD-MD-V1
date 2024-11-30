@@ -241,13 +241,21 @@ zokou({
     arg: _0x4be2d3,
     ms: _0xc63a20
   } = _0x1ec287;
+
   try {
-    if (!_0x4be2d3 || _0x4be2d3.length === 0x0) {
+    if (!_0x4be2d3 || _0x4be2d3.length === 0) {
       return _0x2a6e71("Please ask a question.");
     }
-    const _0x5d0a29 = _0x4be2d3.join(" ");
-    const _0x351572 = await fetch("https://api.gurusensei.workers.dev/llama?prompt=" + _0x5d0a29 + "&apikey=giftedtechk");
-    const _0x4d66b9 = await _0x351572.json();
+
+    const _0x5d0a29 = encodeURIComponent(_0x4be2d3.join(" "));
+    const response = await fetch(`https://api.gurusensei.workers.dev/llama?prompt=${_0x5d0a29}`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const _0x4d66b9 = await response.json();
+
     if (_0x4d66b9 && _0x4d66b9.result) {
       const _0x12cd9d = _0x4d66b9.result;
 
@@ -257,22 +265,22 @@ zokou({
           'message': {
             'messageContextInfo': {
               'deviceListMetadata': {},
-              'deviceListMetadataVersion': 0x2
+              'deviceListMetadataVersion': 2
             },
             'conversation': _0x12cd9d // Use conversation instead of interactive message
           }
         }
       }, {});
-      
+
       await _0x75f67d.relayMessage(_0x519f4b, _0x272274.message, {
         'messageId': _0x272274.key.id
       });
     } else {
       throw new Error("Invalid response from the GPT API.");
     }
-  } catch (_0x1a7921) {
-    console.error("Error getting GPT response:", _0x1a7921.message);
-    _0x2a6e71("Error getting response from GPT.");
+  } catch (error) {
+    console.error("Error getting GPT response:", error.message);
+    _0x2a6e71("Error getting response from GPT: " + error.message);
   }
 });
 zokou({
