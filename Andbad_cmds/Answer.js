@@ -76,74 +76,37 @@ zokou({
 zokou({
   'nomCom': "pair",
   'reaction': '📡',
-  'categorie': 'User'
-}, async (_0x222dc0, _0x1f1bb4, _0x32d766) => {
+  'categorie': 'User   '
+}, async (chat, message, context) => {
   const {
-    repondre: _0x4d613c,
-    arg: _0x120cc8,
-    ms: _0x13d9b2
-  } = _0x32d766;
+    repondre: respond,
+    arg: args,
+    ms: meta
+  } = context;
+
   try {
-    if (!_0x120cc8 || _0x120cc8.length === 0x0) {
-      return _0x4d613c("Example Usage: .pair 255734980103.");
+    if (!args || args.length === 0) {
+      return respond("Usage example: .pair 255734980103.");
     }
-    await _0x4d613c(" Getting Your PairingCode.....A Moment!!!");
-    const _0x33a246 = encodeURIComponent(_0x120cc8.join(" "));
-    const _0x28c137 = "https://andbad-qr.onrender.com/pair?number=" + _0x33a246;
-    const _0x4617aa = await axios.get(_0x28c137);
-    const _0x3d9a61 = _0x4617aa.data;
-    if (_0x3d9a61 && _0x3d9a61.code) {
-      const _0x4de710 = _0x3d9a61.code;
-      const _0x5791a1 = "Your  PairingCode is: *" + _0x4de710 + "*\nUse it to Link Your WhatsApp Within 1 Minute Before it Expires\nHappy Bot Deployment!!!";
-      const _0x4a2613 = [{
-        'name': "cta_copy",
-        'buttonParamsJson': JSON.stringify({
-          'display_text': "📋 COPY CODE",
-          'id': 'copy_code',
-          'copy_code': _0x4de710
-        })
-      }, {
-        'name': "cta_url",
-        'buttonParamsJson': JSON.stringify({
-          'display_text': "FOLLOW 🤍 CHANNEL",
-          'url': 'https://whatsapp.com/channel/'
-        })
-      }];
-      const _0x44580c = generateWAMessageFromContent(_0x222dc0, {
-        'viewOnceMessage': {
-          'message': {
-            'messageContextInfo': {
-              'deviceListMetadata': {},
-              'deviceListMetadataVersion': 0x2
-            },
-            'interactiveMessage': proto.Message.InteractiveMessage.create({
-              'body': proto.Message.InteractiveMessage.Body.create({
-                'text': _0x5791a1
-              }),
-              'footer': proto.Message.InteractiveMessage.Footer.create({
-                'text': "> *POWERED BY andbad*"
-              }),
-              'header': proto.Message.InteractiveMessage.Header.create({
-                'title': '',
-                'subtitle': '',
-                'hasMediaAttachment': false
-              }),
-              'nativeFlowMessage': proto.Message.InteractiveMessage.NativeFlowMessage.create({
-                'buttons': _0x4a2613
-              })
-            })
-          }
-        }
-      }, {});
-      await _0x1f1bb4.relayMessage(_0x222dc0, _0x44580c.message, {
-        'messageId': _0x44580c.key.id
-      });
+    
+    await respond("Retrieving your pairing code..... One moment please!!!");
+    
+    const encodedNumber = encodeURIComponent(args.join(" "));
+    const apiUrl = "https://andbad-qr-k71b.onrender.com/pair?number=" + encodedNumber;
+    const apiResponse = await axios.get(apiUrl);
+    const responseData = apiResponse.data;
+
+    if (responseData && responseData.code) {
+      const pairingCode = responseData.code;
+      const messageContent = "Your pairing code is: *" + pairingCode + "*\nUse it to link your WhatsApp within the next minute before it expires.\nHappy bot deployment!!!\n\n> *POWERED BY andbad*";
+      
+      await respond(messageContent);
     } else {
-      throw new Error("Invalid response from Api.");
+      throw new Error("Invalid response from the API.");
     }
-  } catch (_0x5496b2) {
-    console.error("Error getting Api response:", _0x5496b2.message);
-    _0x4d613c("Error getting response from Api.");
+  } catch (error) {
+    console.error("Error retrieving the API response:", error.message);
+    respond("Error retrieving the API response.");
   }
 });
 zokou({
