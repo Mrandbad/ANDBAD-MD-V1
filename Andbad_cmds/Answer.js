@@ -231,56 +231,27 @@ zokou({
     _0x6162b8("Oops, an error occurred while processing your request");
   }
 });
-zokou({
-  'nomCom': "gpt",
-  'reaction': '📡',
-  'categorie': 'AI'
-}, async (_0x519f4b, _0x75f67d, _0x1ec287) => {
-  const {
-    repondre: _0x2a6e71,
-    arg: _0x4be2d3,
-    ms: _0xc63a20
-  } = _0x1ec287;
+zokou({ nomCom: "gpt", reaction: "🤔", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  const { repondre, arg, ms } = commandeOptions;
 
   try {
-    if (!_0x4be2d3 || _0x4be2d3.length === 0) {
-      return _0x2a6e71("Please ask a question.");
+    if (!arg || arg.length === 0) {
+      return repondre(`Please ask a question.`);
     }
 
-    const _0x5d0a29 = encodeURIComponent(_0x4be2d3.join(" "));
-    const response = await fetch(`https://api.gurusensei.workers.dev/llama?prompt=${_0x5d0a29}`);
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const _0x4d66b9 = await response.json();
-
-    if (_0x4d66b9 && _0x4d66b9.result) {
-      const _0x12cd9d = _0x4d66b9.result;
-
-      // Send the response directly without buttons or interactive message
-      const _0x272274 = generateWAMessageFromContent(_0x519f4b, {
-        'viewOnceMessage': {
-          'message': {
-            'messageContextInfo': {
-              'deviceListMetadata': {},
-              'deviceListMetadataVersion': 2
-            },
-            'conversation': _0x12cd9d // Use conversation instead of interactive message
-          }
-        }
-      }, {});
-
-      await _0x75f67d.relayMessage(_0x519f4b, _0x272274.message, {
-        'messageId': _0x272274.key.id
-      });
+    // Regrouper les arguments en une seule chaîne séparée par "-"
+    const question = arg.join(' ');
+    const response = await axios.get(`https://api.gurusensei.workers.dev/llama?prompt=${question}`);
+    
+    const data = response.data;
+    if (data) {
+      repondre(data.result);
     } else {
-      throw new Error("Invalid response from the GPT API.");
+      repondre("Error during response generation.");
     }
   } catch (error) {
-    console.error("Error getting GPT response:", error.message);
-    _0x2a6e71("Error getting response from GPT: " + error.message);
+    console.error('Erreur:', error.message || 'Une erreur s\'est produite');
+    repondre("Oops, an error occurred while processing your request.");
   }
 });
 zokou({
