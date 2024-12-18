@@ -48,7 +48,7 @@ let infoMsg = `
 │❒⁠⁠⁠⁠│▸ *THEME* : *ANDBADTHEMES*
 │❒⁠⁠⁠⁠╰──────────────
 ╰──────────────────${zeroWidthSpace}
-https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m
+
 `;
 
 let menuMsg = `
