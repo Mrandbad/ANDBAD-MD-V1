@@ -33,7 +33,8 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
-  let infoMsg =  `
+  
+let infoMsg = `
 > ANDBAD MD AVAILABLE MENUS* 
 ╭─────────────────
 │❒⁠⁠⁠⁠╭─────────────
@@ -46,41 +47,42 @@ const date = moment().format('DD/MM/YYYY');
 │❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
 │❒⁠⁠⁠⁠│▸ *THEME* : *ANDBADTHEMES*
 │❒⁠⁠⁠⁠╰──────────────
-╰──────────────────\n`;
-    
+╰──────────────────${zeroWidthSpace}
+https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m
+`;
+
 let menuMsg = `
 
  *COMMANDS*${readmore}
 `;
 
-    for (const cat in coms) {
-        menuMsg += ` ╭────────❒⁠⁠⁠⁠ *${cat}* ✣`;
-        for (const cmd of coms[cat]) {
-            menuMsg += `
-│❒⁠⁠⁠⁠│▸ ${cmd}`;
-        }
+for (const cat in coms) {
+    menuMsg += ` ╭────────❒⁠⁠⁠⁠ *${cat}* ✣`;
+    for (const cmd of coms[cat]) {
         menuMsg += `
-╰────────────···▸▸ \n`
+│❒⁠⁠⁠⁠│▸ ${cmd}`;
     }
+    menuMsg += `
+╰────────────···▸▸ \n`
+}
 
-    menuMsg += `> MADE EASY BY MR ANDBAD 
+menuMsg += `> MADE EASY BY MR ANDBAD 
 `;
 
-   var lien = mybotpic();
+var lien = mybotpic();
 
-   if (lien.match(/\.(mp4|gif)$/i)) {
+if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech", gifPlayback: true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
         repondre("🥵🥵 Menu erreur " + e);
     }
 } 
-// Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -88,9 +90,5 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     }
 } 
 else {
-    
     repondre(infoMsg + menuMsg);
-    
 }
-
-});
