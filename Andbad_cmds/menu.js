@@ -40,6 +40,7 @@ const date = moment().format('DD/MM/YYYY');
 │❒⁠⁠⁠⁠│▸ *MENU* 
 │❒⁠⁠⁠⁠│▸ *MENU2* 
 │❒⁠⁠⁠⁠│▸ *BUGMENU*
+|❒⁠⁠⁠⁠| *https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m*
 │❒⁠⁠⁠⁠╰──────────────
 │❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
 │❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
