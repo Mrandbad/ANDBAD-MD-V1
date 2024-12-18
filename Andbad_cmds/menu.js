@@ -40,12 +40,11 @@ const date = moment().format('DD/MM/YYYY');
 │❒⁠⁠⁠⁠│▸ *MENU* 
 │❒⁠⁠⁠⁠│▸ *MENU2* 
 │❒⁠⁠⁠⁠│▸ *BUGMENU*
-|❒⁠⁠⁠⁠| *https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m*
 │❒⁠⁠⁠⁠╰──────────────
 │❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
 │❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
-│❒⁠⁠⁠⁠│▸ *THEME* : *ANDBADTHEMES*
+│❒⁠⁠⁠⁠│▸ *THEME* : *𝚫𝚴𝐃𝚩𝚫𝐃𝚻𝚮𝚵𝚳𝚵𝐒*
 │❒⁠⁠⁠⁠╰──────────────
 ╰──────────────────\n`;
 
@@ -64,14 +63,14 @@ let menuMsg = `
 ╰────────────···▸▸ \n`
     }
 
-    menuMsg += `> MADE EASY BY MR ANDBAD 
+    menuMsg += `> 𝚳𝚫𝐃𝚵 𝚵𝚫𝐒𝐘 𝚩𝐘 𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃
 `;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
