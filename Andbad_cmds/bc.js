@@ -1,6 +1,6 @@
 const _0x2f8f07 = {
   'nomCom': 'broadcast',
-  'nomCom': 'hanscast',
+  'nomCom': 'andcast',
   'aliases': ['bc', "cast"],
   'reaction': '🚀',
   'categorie': "General"
@@ -37,7 +37,7 @@ zokou(_0x2f8f07, async (_0x3538d1, _0x3d7197, _0x5e996d) => {
     'AVDnh': 'OrZip',
     'UipCx': "OJdVF",
     'xcqMU': "🖕hey you!! fuck off i can't broadcast your message🖕😡🖕 but sorry 😔",
-    'WUyKK': "*HANS-MD is sending this message to all groups you are in*...",
+    'WUyKK': "*𝐀𝐍𝐃𝐁𝐀𝐃-𝐌𝐃-𝐕𝟏 is sending this message to all groups you are in*...",
     'OclUo': function (_0x457223, _0x2c0f6a) {
       return _0x457223 !== _0x2c0f6a;
     },
@@ -49,7 +49,7 @@ zokou(_0x2f8f07, async (_0x3538d1, _0x3d7197, _0x5e996d) => {
     'FycWN': function (_0xed1e58, _0x52b0b2) {
       return _0xed1e58 + _0x52b0b2;
     },
-    'NQvSP': "⚠️‼️ANDBAD-𝐌𝐃 BROADCAST‼️️⚠️\n\n❗*message* : ",
+    'NQvSP': "⚠️‼️𝐀𝐍𝐃𝐁𝐀𝐃-𝐌𝐃-𝐕𝟏 BROADCAST‼️️⚠️\n\n❗*message* : ",
     'tCmLj': "\n\n️🌟 *Author*: ",
     'jQWcD': "https://files.catbox.moe/ozic76.jpeg",
     'xPQHk': function (_0x27e4ab, _0x209728) {
@@ -89,7 +89,7 @@ zokou(_0x2f8f07, async (_0x3538d1, _0x3d7197, _0x5e996d) => {
   let _0xd41245 = _0x369b09.map(_0x1d6aac => _0x1d6aac.id);
   await _0x2005ec("*HANS-MD is sending this message to all groups you are in*...");
   for (let _0xeef539 of _0xd41245) {
-    let _0x3fbe82 = "‼️⚠️ANDBAD-𝐌𝐃 𝐁𝐑𝐎ADCAST⚠️️‼️\n\n❗*message* : " + _0x2e8468 + "\n\n️‼️ *Author*: " + _0x358629;
+    let _0x3fbe82 = "‼️⚠️𝐀𝐍𝐃𝐁𝐀𝐃-𝐌𝐃-𝐕𝟏 𝐁𝐑𝐎ADCAST⚠️️‼️\n\n❗*message* : " + _0x2e8468 + "\n\n️‼️ *Author*: " + _0x358629;
     const _0x4da470 = {
       'url': "https://files.catbox.moe/ozic76.jpeg"
     };
