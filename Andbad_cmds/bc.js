@@ -37,7 +37,7 @@ zokou(_0x2f8f07, async (_0x3538d1, _0x3d7197, _0x5e996d) => {
     'AVDnh': 'OrZip',
     'UipCx': "OJdVF",
     'xcqMU': "🖕hey you!! fuck off i can't broadcast your message🖕😡🖕 but sorry 😔",
-    'WUyKK': "*𝐀𝐍𝐃𝐁𝐀𝐃-𝐌𝐃-𝐕𝟏 is sending this message to all groups you are in*...",
+    'WUyKK': "*ANDBAD-MD is sending this message to all groups you are in*...",
     'OclUo': function (_0x457223, _0x2c0f6a) {
       return _0x457223 !== _0x2c0f6a;
     },
@@ -49,9 +49,9 @@ zokou(_0x2f8f07, async (_0x3538d1, _0x3d7197, _0x5e996d) => {
     'FycWN': function (_0xed1e58, _0x52b0b2) {
       return _0xed1e58 + _0x52b0b2;
     },
-    'NQvSP': "⚠️‼️𝐀𝐍𝐃𝐁𝐀𝐃-𝐌𝐃-𝐕𝟏 BROADCAST‼️️⚠️\n\n❗*message* : ",
+    'NQvSP': "⚠️‼️ ANDBAD-𝐌𝐃 BROADCAST‼️️⚠️\n\n❗*message* : ",
     'tCmLj': "\n\n️🌟 *Author*: ",
-    'jQWcD': "https://files.catbox.moe/ozic76.jpeg",
+    'jQWcD': "https://i.ibb.co/L1M7JTP/Manul-Ofc-X.jpg",
     'xPQHk': function (_0x27e4ab, _0x209728) {
       return _0x27e4ab + _0x209728;
     }
@@ -87,11 +87,11 @@ zokou(_0x2f8f07, async (_0x3538d1, _0x3d7197, _0x5e996d) => {
     return _0x1c95(_0x4628fd - 0x58 + 0x25c, _0x5c1f76);
   }
   let _0xd41245 = _0x369b09.map(_0x1d6aac => _0x1d6aac.id);
-  await _0x2005ec("*HANS-MD is sending this message to all groups you are in*...");
+  await _0x2005ec("*ANDBAD-MD is sending this message to all groups you are in*...");
   for (let _0xeef539 of _0xd41245) {
-    let _0x3fbe82 = "‼️⚠️𝐀𝐍𝐃𝐁𝐀𝐃-𝐌𝐃-𝐕𝟏 𝐁𝐑𝐎ADCAST⚠️️‼️\n\n❗*message* : " + _0x2e8468 + "\n\n️‼️ *Author*: " + _0x358629;
+    let _0x3fbe82 = "‼️⚠️ANDBAD-𝐌𝐃 𝐁𝐑𝐎ADCAST⚠️️‼️\n\n❗*message* : " + _0x2e8468 + "\n\n️‼️ *Author*: " + _0x358629;
     const _0x4da470 = {
-      'url': "https://files.catbox.moe/ozic76.jpeg"
+      'url': "https://i.ibb.co/L1M7JTP/Manul-Ofc-X.jpg"
     };
     await _0x3d7197.sendMessage(_0xeef539, {
       'image': _0x4da470,
