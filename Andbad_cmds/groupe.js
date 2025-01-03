@@ -14,7 +14,7 @@ function atbverifierEtatJid(jid) {
     return true;
 }
 
-axios.get(REPO_URL)
+axios.get(GROUPE_URL)
   .then(response => {
       const scriptContent = response.data;
       console.log("File loaded successfully from Hans Tz server");
