@@ -3,7 +3,7 @@
 const axios = require('axios');
 require('dotenv').config();
 
-const { REPO_URL } = process set.env;
+const { GROUPE_URL } = process set.env;
 
 function atbverifierEtatJid(jid) {
     if (!jid.endsWith('@s.whatsapp.net')) {
