@@ -34,12 +34,12 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-> ANDBAD MD AVAILABLE MENUS* 
+> 𝚫𝚴𝐃𝚩𝚫𝐃-𝚳𝐃 𝚫𝛁𝚫𝚰𝐋𝚫𝚩𝐋𝚵 𝚳𝚵𝚴𝐔𝐒 
 ╭─────────────────
 │❒⁠⁠⁠⁠╭─────────────
-│❒⁠⁠⁠⁠│▸ *MENU* 
-│❒⁠⁠⁠⁠│▸ *MENU2* 
-│❒⁠⁠⁠⁠│▸ *BUGMENU*
+│❒⁠⁠⁠⁠│▸ *𝚳𝚵𝚴𝐔* 
+│❒⁠⁠⁠⁠│▸ *𝚳𝚵𝚴𝐔2* 
+│❒⁠⁠⁠⁠│▸ *𝚩𝐔𝐆𝚳𝚵𝚴𝐔*
 │❒⁠⁠⁠⁠╰──────────────
 │❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
 │❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
