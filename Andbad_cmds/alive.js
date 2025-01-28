@@ -71,14 +71,14 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("*AM ALIVE MOTHER FUCKER*") ; return};
+        if(!superUser) { repondre("*𝚫𝚳 𝚫𝐋𝚰𝛁𝚵 𝚳𝚯𝚻𝚮𝚵𝚪 𝐅𝐔𝐂𝐊𝚵𝚪*") ; return};
 
-      await   repondre("MR ANDBAD MD IS ALIVE AT THE MOMMENT DEPLOY IT NOW AND ENJOY");
+      await   repondre("*☠️ 𝚫𝚴𝐃𝚩𝚫𝐃-𝚳𝐃-𝛁1* ~𝚰𝐒 𝚫𝐋𝚰𝛁𝚵 𝚫𝚻 𝚻𝚮𝚵 𝚳𝚯𝚳𝚳𝚵𝚴𝚻 𝐃𝚵𝚸𝐋𝚯𝐘 𝚰𝚻 𝚴𝚯𝐖 𝚫𝚴𝐃 𝚵𝚴𝐉𝚯𝐘~");
          repondre("don't do fake thinks :)")
      }
  } else {
 
-    if(!superUser) { repondre ("MR ANDBAD ONLY") ; return};
+    if(!superUser) { repondre ("𝐂.𝚵.𝚯 𝚫𝚴𝐃𝚩𝚫𝐃 ONLY") ; return};
 
   
     const texte = arg.join(' ').split(';')[0];
@@ -88,7 +88,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre(' FUCK YOU IF YOU DONT FORK THIS BOT. ')
+repondre(' 𝗙𝗨𝗖𝗞 𝗬𝗢𝗨 𝗜𝗙 𝗬𝗢𝗨 𝗗𝗢𝗡𝗧 𝗙𝗢𝗥𝗞 𝗧𝗛𝗜𝗦 𝗕𝗢𝗧. ')
 
 }
     });
