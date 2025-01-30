@@ -20,7 +20,7 @@ module.exports = { session: process.env.SESSION_ID || ' ANDBAD-BOT;;;eyJub2lzZUt
     HEROKU_APP_NAME : process.env.HEROKU_APP_NAME,
     HEROKU_APY_KEY : process.env.HEROKU_APY_KEY ,
     WARN_COUNT : process.env.WARN_COUNT || '3' ,
-    ETAT : process.env.PRESENCE || '',
+    ETAT : process.env.PRESENCE || 'typing',
     CHATBOT : process.env.PM_CHATBOT || 'no',
     DP : process.env.STARTING_BOT_MESSAGE || "yes",
     ADM : process.env.ANTI_DELETE_MESSAGE || 'no',
