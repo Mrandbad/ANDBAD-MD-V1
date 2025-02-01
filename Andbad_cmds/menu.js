@@ -70,7 +70,7 @@ let menuMsg = `
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮" , SourceUrl : "https://whatsapp.com/channel/0029VajQn6YF1YIPE0XgBC2m", gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
