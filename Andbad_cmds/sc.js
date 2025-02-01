@@ -5,21 +5,18 @@ const { format } = require(__dirname + "/../framework/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
-const more = String.fromCharCode(8206)
-const readmore = more.repeat(4001)
+const more = String.fromCharCode(8206);
+const readmore = more.repeat(4001);
 
-zokou({ nomCom: "git", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
+zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
+    let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
     var mode = "public";
-    
+
     if ((s.MODE).toLocaleLowerCase() != "yes") {
         mode = "private";
     }
-
-
-    
 
     cm.map(async (com, index) => {
         if (!coms[com.categorie])
@@ -29,56 +26,89 @@ zokou({ nomCom: "git", categorie: "General" }, async (dest, zk, commandeOptions)
 
     moment.tz.setDefault('Etc/GMT');
 
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
+    // Créer une date et une heure en GMT
+    const temps = moment().format('HH:mm:ss');
+    const date = moment().format('DD/MM/YYYY');
 
-  let infoMsg =  `
-AVAILABLE REPO AND GROUPS* 
+    let infoMsg = `
+> 𝚫𝚴𝐃𝚩𝚫𝐃-𝚳𝐃 𝚫𝛁𝚫𝚰𝐋𝚫𝚩𝐋𝚵 𝚳𝚵𝚴𝐔𝐒 
 ╭─────────────────
 │❒⁠⁠⁠⁠╭─────────────
-│❒⁠⁠⁠⁠│▸ *CHANNEL* 
-│❒⁠⁠⁠⁠│▸ *GROUP* 
-│❒⁠⁠⁠⁠│▸ *REPO*
+│❒⁠⁠⁠⁠│▸ *𝚳𝚵𝚴𝐔* 
+│❒⁠⁠⁠⁠│▸ *𝚳𝚵𝚴𝐔2* 
+│❒⁠⁠⁠⁠│▸ *𝚩𝐔𝐆𝚳𝚵𝚴𝐔*
 │❒⁠⁠⁠⁠╰──────────────
-│❒⁠⁠⁠⁠│▸ *CHANNEL* :  https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m
-│❒⁠⁠⁠⁠│▸ *GROUP* : https://chat.whatsapp.com/DU79JfdnOI83ZFVAyD74Mo
-│❒⁠⁠⁠⁠│▸ *REPO* : https://github.com/Mrandbad/ANDBAD-MD-V1
-│❒⁠⁠⁠⁠│▸ *YTUBE* : https://www.youtube.com/@andbadtz
+│❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
+│❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
+│❒⁠⁠⁠⁠│▸ *THEME* : *𝚫𝚴𝐃𝚩𝚫𝐃𝚻𝚮𝚵𝚳𝚵𝐒*
 │❒⁠⁠⁠⁠╰──────────────
-╰──────────────────\n
-  `;
-    
-let menuMsg = `
-     MADE EASY BY ANDBAD TEAMS
+╰──────────────────\n`;
 
-❒────────────────────❒`;
+    let menuMsg = `
+ *COMMANDS*${readmore}
+`;
 
-   var lien = mybotpic();
+    for (const cat in coms) {
+        menuMsg += ` ╭────────❒⁠⁠⁠⁠ *${cat}* ✣`;
+        for (const cmd of coms[cat]) {
+            menuMsg += `
+│❒⁠⁠⁠⁠│▸ ${cmd}`;
+        }
+        menuMsg += `
+╰────────────···▸▸ \n`;
+    }
 
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
-}
+    menuMsg += `> 𝚳𝚫𝐃𝚵 𝚵𝚫𝐒𝐘 𝚩𝐘 𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃
+`;
 
-}); 
+    var lien = mybotpic();
+
+    // Define the Source URL
+    const sourceUrl = "https://whatsapp.com/channel/0029VajQn6YF1YIPE0XgBC2m";
+
+    if (lien.match(/\.(mp4|gif)$/i)) {
+        try {
+            zk.sendMessage(dest, {
+                video: { url: lien },
+                caption: infoMsg + menuMsg,
+                footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮",
+                gifPlayback: true,
+                contextInfo: {
+                    externalAdReply: {
+                        sourceUrl: sourceUrl
+                    }
+                }
+            }, { quoted: ms });
+        } catch (e) {
+            console.log("🥵🥵 Menu erreur " + e);
+            repondre("🥵🥵 Menu erreur " + e);
+        }
+    } else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+        try {
+            zk.sendMessage(dest, {
+                image: { url: lien },
+                caption: infoMsg + menuMsg,
+                footer: "Je suis *andbad v 1*, developed by andbad",
+                contextInfo: {
+                    externalAdReply: {
+                        sourceUrl: sourceUrl
+                    }
+                }
+            }, { quoted: ms });
+        } catch (e) {
+            console.log("🥵🥵 Menu erreur " + e);
+            repondre("🥵🥵 Menu erreur " + e);
+        }
+    } else {
+        // Send a text message with the Source URL
+        try {
+            zk.sendMessage(dest, {
+                text: infoMsg + menuMsg + `\nSource: ${sourceUrl}`
+            }, { quoted: ms });
+        } catch (e) {
+            console.log("🥵🥵 Menu erreur " + e);
+            repondre("🥵🥵 Menu erreur " + e);
+        }
+    }
+});
