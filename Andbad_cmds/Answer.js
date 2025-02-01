@@ -239,12 +239,16 @@ zokou({ nomCom: "gpt", reaction: "🤔", categorie: "IA" }, async (dest, zk, com
       return repondre(`Please ask a question.`);
     }
 
-    // Regrouper les arguments en une seule chaîne séparée par "-"
+    // Regrouper les arguments en une seule chaîne séparée par un espace
     const question = arg.join(' ');
-    const response = await axios.get(`https://api.gurusensei.workers.dev/llama?prompt=${question}`);
+    
+    // URL encode the question
+    const encodedQuestion = encodeURIComponent(question);
+    
+    const response = await axios.get(`https://api.gurusensei.workers.dev/llama?prompt=${encodedQuestion}`);
     
     const data = response.data;
-    if (data) {
+    if (data && data.result) {
       repondre(data.result);
     } else {
       repondre("Error during response generation.");
