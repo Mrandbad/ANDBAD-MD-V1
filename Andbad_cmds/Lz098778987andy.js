@@ -264,7 +264,7 @@ zokou({
 const { fbdown } = require("btch-downloader"); // Importing fbdown from btch-downloader
 
 zokou({
-  'nomCom': "fbdownload",
+  'nomCom': "fb",
   'categorie': "Download",
   'reaction': '📥'
 }, async (_0x5af0bd, _0x3d387a, _0x1e68f3) => {
