@@ -203,3 +203,60 @@ zokou({
     _0x4bd959("An error occurred while downloading the file.");
   }
 });
+
+
+zokou({
+  'nomCom': "play2",
+  'categorie': "Download",
+  'reaction': '📥'
+}, async (_0x5af0bd, _0x3d387a, _0x1e68f3) => {
+  const {
+    ms: _0x29402c,
+    repondre: _0x4bd959,
+    arg: _0x410d76
+  } = _0x1e68f3;
+
+  if (!_0x410d76[0x0]) {
+    _0x4bd959("Please insert a song/video name.");
+    return;
+  }
+
+  try {
+    let _0x3548af = _0x410d76.join(" "); // Join the arguments to form the search query
+    const searchResults = await yts(_0x3548af); // Search for the video/audio
+
+    const _0x46b582 = searchResults.videos;
+    if (_0x46b582 && _0x46b582.length > 0) {
+      const _0x42b788 = _0x46b582[0]; // Get the first result
+      const downloadUrl = await download(_0x42b788.url); // Download using btch-downloader
+
+      if (downloadUrl) {
+        const _0x4301f2 = {
+          'image': {
+            'url': _0x42b788.thumbnail // Thumbnail of the video
+          },
+          'caption': "DOWNLOAD COMPLETE\n\n ©𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
+        };
+        await _0x3d387a.sendMessage(_0x5af0bd, _0x4301f2, {
+          'quoted': _0x29402c
+        });
+        await _0x3d387a.sendMessage(_0x5af0bd, {
+          'audio': {
+            'url': downloadUrl.audio || downloadUrl.video // Assuming it returns audio or video URL
+          },
+          'mimetype': "audio/mp4"
+        }, {
+          'quoted': _0x29402c
+        });
+        _0x4bd959("*Downloaded Successfully ✅*");
+      } else {
+        _0x4bd959("Failed to download. Please try again later.");
+      }
+    } else {
+      _0x4bd959("No videos found for the given text.");
+    }
+  } catch (_0x5d2a11) {
+    console.error("Error from API:", _0x5d2a11);
+    _0x4bd959("An error occurred while searching or downloading the file.");
+  }
+});
