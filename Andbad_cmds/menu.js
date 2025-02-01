@@ -104,7 +104,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         // Send a text message with the Source URL
         try {
             zk.sendMessage(dest, {
-                text: infoMsg + menuMsg + `\nSource: ${sourceUrl}`
+                text: infoMsg + menuMsg + `Source: ${sourceUrl}`
             }, { quoted: ms });
         } catch (e) {
             console.log("🥵🥵 Menu erreur " + e);
