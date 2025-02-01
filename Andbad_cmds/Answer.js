@@ -231,31 +231,41 @@ zokou({
     _0x6162b8("Oops, an error occurred while processing your request");
   }
 });
-zokou({ nomCom: "gpt", reaction: "🤔", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+zokou({
+  nomCom: "gpt",
+  aliases: ["chatgpt"],
+  reaction: "🤖",
+  categorie: "AI",
+  desc: "Fetches AI responses from the Gemini API based on a provided prompt."
+}, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
     if (!arg || arg.length === 0) {
-      return repondre(`Please ask a question.`);
+      return repondre("Please provide a prompt for the Gemini AI.");
     }
 
-    // Regrouper les arguments en une seule chaîne séparée par un espace
-    const question = arg.join(' ');
+    // Join the arguments into a single string
+    const question = arg.join(" ");
     
-    // URL encode the question
-    const encodedQuestion = encodeURIComponent(question);
+    // Fetch response from the Gemini API
+    const response = await fetch("https://www.noobs-api.000.pe/dipto/gemini?prompt=" + encodeURIComponent(question));
     
-    const response = await axios.get(`https://api.gurusensei.workers.dev/llama?prompt=${encodedQuestion}`);
+    if (!response.ok) {
+      return repondre("Failed to get a response from the Gemini AI. Please try again later.");
+    }
+
+    const data = await response.json();
     
-    const data = response.data;
-    if (data && data.result) {
-      repondre(data.result);
+    if (data && data.dipto) {
+      const result = data.dipto;
+      await repondre(result);
     } else {
-      repondre("Error during response generation.");
+      await repondre("Could not retrieve a response from Gemini AI. Please try again later.");
     }
   } catch (error) {
-    console.error('Erreur:', error.message || 'Une erreur s\'est produite');
-    repondre("Oops, an error occurred while processing your request.");
+    console.error(error);
+    await repondre("There was an error processing your request. Please try again later.");
   }
 });
 zokou({
