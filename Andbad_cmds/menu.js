@@ -66,31 +66,45 @@ let menuMsg = `
     menuMsg += `> 𝚳𝚫𝐃𝚵 𝚵𝚫𝐒𝐘 𝚩𝐘 𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃
 `;
 
-   var lien = mybotpic();
+var lien = mybotpic();
 
-   if (lien.match(/\.(mp4|gif)$/i)) {
+// Define the Source URL
+const sourceUrl = "https://whatsapp.com/channel/0029VajQn6YF1YIPE0XgBC2m";
+
+if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮" , SourceUrl : "https://whatsapp.com/channel/0029VajQn6YF1YIPE0XgBC2m", gifPlayback : true }, { quoted: ms });
-    }
-    catch (e) {
+        zk.sendMessage(dest, {
+            video: { url: lien },
+            caption: infoMsg + menuMsg,
+            footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮",
+            gifPlayback: true,
+            contextInfo : {
+                externalAdReply: {
+                    sourceUrl: sourceUrl
+                }
+            }
+        }, { quoted: ms });
+    } catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
         repondre("🥵🥵 Menu erreur " + e);
     }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+} else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech" }, { quoted: ms });
-    }
-    catch (e) {
+        zk.sendMessage(dest, {
+            image: { url: lien },
+            caption: infoMsg + menuMsg,
+            footer: "Je suis *msela-chui-v2*, déveloper mselachui Tech",
+            contextInfo: {
+                externalAdReply: {
+                    sourceUrl: sourceUrl
+                }
+            }
+        }, { quoted: ms });
+    } catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
         repondre("🥵🥵 Menu erreur " + e);
     }
-} 
-else {
-
+} else {
     repondre(infoMsg + menuMsg);
-
 }
-
 });
