@@ -67,18 +67,25 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     // Define the Source URL
     const sourceUrl = "https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m";
 
+    const messageOptions = {
+        caption: infoMsg + menuMsg,
+        footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮",
+        contextInfo: {
+            externalAdReply: {
+                sourceUrl: sourceUrl,
+                title: "View Channel",
+                body: "Click to view the channel",
+                thumbnail: { url: lien } // Optional: You can set a thumbnail if needed
+            }
+        }
+    };
+
     if (lien.match(/\.(mp4|gif)$/i)) {
         try {
             zk.sendMessage(dest, {
                 video: { url: lien },
-                caption: infoMsg + menuMsg,
-                footer: "Je suis *𝚫 𝚴 𝐃 𝚩 𝚫 𝐃*, déveloper 𝚫 𝚴 𝐃 𝚩 𝚫 𝐃-𝚻 𝚵 𝐂 𝚮",
-                gifPlayback: true,
-                contextInfo: {
-                    externalAdReply: {
-                        sourceUrl: sourceUrl
-                    }
-                }
+                ...messageOptions,
+                gifPlayback: true
             }, { quoted: ms });
         } catch (e) {
             console.log("🥵🥵 Menu erreur " + e);
@@ -88,23 +95,24 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         try {
             zk.sendMessage(dest, {
                 image: { url: lien },
-                caption: infoMsg + menuMsg,
-                footer: "Je suis *andbad v 1*, developed by andbad",
-                contextInfo: {
-                    externalAdReply: {
-                        sourceUrl: sourceUrl
-                    }
-                }
+                ...messageOptions
             }, { quoted: ms });
         } catch (e) {
             console.log("🥵🥵 Menu erreur " + e);
             repondre("🥵🥵 Menu erreur " + e);
         }
     } else {
-        // Send a text message with the Source URL
+        // Send a text message with the hidden Source URL
         try {
             zk.sendMessage(dest, {
-                text: infoMsg + menuMsg + `Source: ${sourceUrl}`
+                text: infoMsg + menuMsg,
+                contextInfo: {
+                    externalAdReply: {
+                        sourceUrl: sourceUrl,
+                        title: "View Channel",
+                        body: "Click to view the channel"
+                    }
+                }
             }, { quoted: ms });
         } catch (e) {
             console.log("🥵🥵 Menu erreur " + e);
