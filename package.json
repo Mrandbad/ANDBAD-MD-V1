@@ -66,6 +66,7 @@
     "typescript": "^5.1.6",
     "wa-sticker-formatter": "^4.4.4",
     "youtube-yts": "^2.0.0",
+    "npm install btch-downloader": "^2.2.9",
     "youtubedl-core": "^4.11.7",
     "yt-search": "^2.10.4",
     "ytdl-core": "github:franceking1/flash-dls"

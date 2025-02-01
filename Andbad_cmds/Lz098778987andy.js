@@ -1,4 +1,4 @@
-const {
+/*const {
   zokou
 } = require("../framework/zokou");
 const yts = require("yt-search");
@@ -146,5 +146,60 @@ zokou({
   } catch (_0x5d2a11) {
     console.error("Error from API:", _0x5d2a11);
     _0x4bd959("An error occurred while searching or downloading the audio.");
+  }
+});*/
+
+
+const {
+  zokou
+} = require("../framework/zokou");
+const yts = require("yt-search");
+const { download } = require("btch-downloader"); // Importing the btch-downloader
+
+zokou({
+  'nomCom': "play",
+  'categorie': "Download",
+  'reaction': '📥'
+}, async (_0x5af0bd, _0x3d387a, _0x1e68f3) => {
+  const {
+    ms: _0x29402c,
+    repondre: _0x4bd959,
+    arg: _0x410d76
+  } = _0x1e68f3;
+
+  if (!_0x410d76[0x0]) {
+    _0x4bd959("Please insert a video/audio URL.");
+    return;
+  }
+
+  try {
+    let _0x3548af = _0x410d76[0]; // Assuming the first argument is the URL
+    const downloadUrl = await download(_0x3548af); // Using btch-downloader to download
+
+    if (downloadUrl) {
+      const _0x4301f2 = {
+        'image': {
+          'url': downloadUrl.thumbnail // Assuming the download function returns a thumbnail
+        },
+        'caption': "DOWNLOAD COMPLETE\n\n ©𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
+      };
+      await _0x3d387a.sendMessage(_0x5af0bd, _0x4301f2, {
+        'quoted': _0x29402c
+      });
+      await _0x3d387a.sendMessage(_0x5af0bd, {
+        'audio': {
+          'url': downloadUrl.audio || downloadUrl.video // Assuming it returns audio or video URL
+        },
+        'mimetype': "audio/mp4"
+      }, {
+        'quoted': _0x29402c
+      });
+      _0x4bd959("*Downloaded Successfully ✅*");
+    } else {
+      _0x4bd959("Failed to download. Please check the URL and try again.");
+    }
+  } catch (_0x5d2a11) {
+    console.error("Error from API:", _0x5d2a11);
+    _0x4bd959("An error occurred while downloading the file.");
   }
 });
