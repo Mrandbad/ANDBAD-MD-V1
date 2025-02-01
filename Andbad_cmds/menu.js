@@ -65,7 +65,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     var lien = mybotpic();
 
     // Define the Source URL
-    const sourceUrl = "https://whatsapp.com/channel/0029VajQn6YF1YIPE0XgBC2m";
+    const sourceUrl = "https://whatsapp.com/channel/0029VajQn6YF1YlPE0XgBC2m";
 
     if (lien.match(/\.(mp4|gif)$/i)) {
         try {
