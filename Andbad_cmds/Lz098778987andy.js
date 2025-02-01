@@ -260,3 +260,53 @@ zokou({
     _0x4bd959("An error occurred while searching or downloading the file.");
   }
 });
+
+const { fbdown } = require("btch-downloader"); // Importing fbdown from btch-downloader
+
+zokou({
+  'nomCom': "fbdownload",
+  'categorie': "Download",
+  'reaction': '📥'
+}, async (_0x5af0bd, _0x3d387a, _0x1e68f3) => {
+  const {
+    ms: _0x29402c,
+    repondre: _0x4bd959,
+    arg: _0x410d76
+  } = _0x1e68f3;
+
+  if (!_0x410d76[0x0]) {
+    _0x4bd959("Please insert a Facebook video URL.");
+    return;
+  }
+
+  try {
+    let _0x3548af = _0x410d76[0]; // Assuming the first argument is the URL
+    const data = await fbdown(_0x3548af); // Fetch video data using fbdown
+
+    if (data && data.url) {
+      const _0x4301f2 = {
+        'image': {
+          'url': data.thumbnail // Assuming the data contains a thumbnail
+        },
+        'caption': "DOWNLOAD COMPLETE\n\n ©𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
+      };
+      await _0x3d387a.sendMessage(_0x5af0bd, _0x4301f2, {
+        'quoted': _0x29402c
+      });
+      await _0x3d387a.sendMessage(_0x5af0bd, {
+        'video': {
+          'url': data.url // Using the URL from the fetched data
+        },
+        'mimetype': "video/mp4"
+      }, {
+        'quoted': _0x29402c
+      });
+      _0x4bd959("*Downloaded Successfully ✅*");
+    } else {
+      _0x4bd959("Failed to download. Please check the URL and try again.");
+    }
+  } catch (_0x5d2a11) {
+    console.error("Error from API:", _0x5d2a11);
+    _0x4bd959("An error occurred while downloading the video.");
+  }
+});
