@@ -201,6 +201,40 @@ zokou({
     respondFunction("Something went wrong...");
   }
 });
+
+const Groq = require('groq-sdk');
+
+zokou({
+  'nomCom': "gpt3", // Command name
+  'reaction': '📡', // Reaction emoji
+  'categorie': 'AI' // Category
+}, async (context, user, params) => {
+  const {
+    respond: respondFunction,
+    ms: messageService,
+    arg: args
+  } = params;
+
+  // Check if there are arguments provided
+  if (!args || !args[0]) {
+    return respondFunction("YES!\n _I'm listening to you._");
+  }
+
+  try {
+    // Join the arguments into a single string
+    const userMessage = args.join(" ");
+    // Initialize Groq client
+    const client = new Groq.Client({ apiKey: global.key.groq });
+    // Fetch response from the Groq API
+    const response = await client.query(userMessage);
+    
+    // Send the AI's response back to the user
+    await respondFunction(response.data);
+  } catch (error) {
+    // Handle any errors that occur during the fetch
+    await respondFunction("An error occurred while processing your request.");
+  }
+});
 zokou({
   'nomCom': "dalle",
   'aliases': ["dall", "dal"],

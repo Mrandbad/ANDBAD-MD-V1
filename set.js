@@ -29,6 +29,11 @@ module.exports = { session: process.env.SESSION_ID || '',
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
    
 };
+
+global.key = {
+  groq: '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'
+}
+
 let fichier = require.resolve(__filename);
 fs.watchFile(fichier, () => {
     fs.unwatchFile(fichier);
