@@ -257,7 +257,7 @@ zokou({
     }
   } catch (_0x5d2a11) {
     console.error("Error from API:", _0x5d2a11);
-    _0x4bd959("An error occurred while searching or downloading the file.");
+    _0x4bd959("An error occurred while searching or downloading the audio.");
   }
 });
 
