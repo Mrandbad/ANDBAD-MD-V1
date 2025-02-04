@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "menu2", categorie: "General" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -33,7 +33,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────《🇹🇿《𝚫𝚴𝐃𝚩𝚫𝐃-𝚳𝐃》🇹🇿》────
+╭────《😃《𝗦𝗧𝗔𝗡𝗬-𝗧𝗘𝗖𝗛-𝗫𝗠𝗗》😃》────
 ┴  ╭─────────────
 │❒⁠⁠⁠⁠│ *ADMIN* : ${s.OWNER_NAME}
 │❒│⁠⁠⁠⁠ *CALENDER* : ${date}
@@ -42,17 +42,17 @@ const date = moment().format('DD/MM/YYYY');
 │❒│⁠⁠⁠⁠ *ORDERS* : ${cm.length} 
 │❒│⁠⁠⁠⁠ *SPACE* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │❒│⁠⁠⁠⁠ *CHROME* : ${os.platform()}
-│❒│⁠⁠⁠⁠ *THEME* : *ANDBADTHEME*
+│❒│⁠⁠⁠⁠ *THEME* : *𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™*
 ┬  ╰──────────────
-╰─── ··《🇹🇿《𝚫𝚴𝐃𝚩𝚫𝐃-𝚳𝐃》🇹🇿》··──\n`;
+╰─── ··《✌️《𝗦𝗧𝗔𝗡𝗬-𝗧𝗘𝗖𝗛-𝗫𝗠𝗗》✌️》··──\n`;
     
 let menuMsg = `
  ─────────
-  *☠️𝚻𝚵𝚫𝚳 𝚫𝚴𝐃𝚩𝚫𝐃 𝚩𝚯𝚻☠️* 
+  *©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷-𝚂𝚄𝙿𝙿𝙾𝚁𝚃* 
  ─────────
 
 
- *ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊*
+ *𝗦𝗧𝗔𝗡𝗬-𝗧𝗘𝗖𝗛-𝗫𝗠𝗗-𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦*
 `;
 
     for (const cat in coms) {
@@ -67,7 +67,7 @@ let menuMsg = `
 
     menuMsg += `
 
-|⏣𝐌𝐀𝐃𝐄 𝐄𝐀𝐒𝐘 𝐛𝐲 𝐌𝐑 𝐀𝐍𝐃𝐁𝐀𝐃🥷
+|⏣𝗗𝗘𝗩𝗘𝗟𝗘𝗣𝗢𝗗 𝗕𝗬 ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™ 𝗦𝗜𝗡𝗚𝗟𝗘 𝗕𝗢𝗬🥷
 *❒⁠⁠⁠⁠—————————— ❒⁠⁠⁠⁠——————————❒⁠⁠⁠⁠*
 `;
 
