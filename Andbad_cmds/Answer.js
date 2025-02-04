@@ -74,39 +74,56 @@ zokou({
   }
 });
 zokou({
-  'nomCom': "pair",
-  'reaction': '📡',
-  'categorie': 'User   '
-}, async (chat, message, context) => {
-  const {
-    repondre: respond,
-    arg: args,
-    ms: meta
-  } = context;
+  nomCom: "code",
+  aliases: ["session", "pair", "paircode", "qrcode"],
+  reaction: '🚀',
+  categorie: 'system'
+}, async (dest, zk, commandeOptions) => {
+  const { repondre, arg, ms } = commandeOptions;
+
+  if (!arg || arg.length === 0) {
+    const replyText = "Example Usage: .code 2551111xxxxx.";
+    return repondre(replyText);
+  }
 
   try {
-    if (!args || args.length === 0) {
-      return respond("Usage example: .pair 255734980103.");
-    }
-    
-    await respond("Retrieving your pairing code..... One moment please!!!");
-    
-    const encodedNumber = encodeURIComponent(args.join(" "));
-    const apiUrl = "https://andbad-qr-k71b.onrender.com/pair?number=" + encodedNumber;
-    const apiResponse = await axios.get(apiUrl);
-    const responseData = apiResponse.data;
+    // Notify user that pairing is in progress
+    const replyText = "*Wait Andbad Md is getting your pair code.......*";
+    await repondre(replyText);
 
-    if (responseData && responseData.code) {
-      const pairingCode = responseData.code;
-      const messageContent = "Your pairing code is: *" + pairingCode + "*\nUse it to link your WhatsApp within the next minute before it expires.\nHappy bot deployment!!!\n\n> *POWERED BY andbad*";
-      
-      await respond(messageContent);
+    // Prepare the API request
+    const encodedNumber = encodeURIComponent(arg.join(" "));
+    const apiUrl = `https://andbad-qr-k71b.onrender.com/code?number=${encodedNumber}`;
+
+    // Fetch the pairing code from the API
+    const response = await axios.get(apiUrl);
+    const data = response.data;
+
+    if (data && data.code) {
+      const pairingCode = data.code;
+      await zk.sendMessage(dest, {
+        text: pairingCode,
+        contextInfo: {
+          externalAdReply: {
+            title: "ANDBAD-MD PAIR CODE",
+            body: "Here is your pairing code:",
+            mediaType: 1,
+            thumbnailUrl: conf.URL, 
+            sourceUrl: conf.GURL,
+            showAdAttribution: true, 
+          },
+        },
+      }, { quoted: ms });
+
+      const secondReplyText = "Here is your pair code, copy and paste it to the notification above or link devices.";
+      await repondre(secondReplyText);
     } else {
-      throw new Error("Invalid response from the API.");
+      throw new Error("Invalid response from API.");
     }
   } catch (error) {
-    console.error("Error retrieving the API response:", error.message);
-    respond("Error retrieving the API response.");
+    console.error("Error getting API response:", error.message);
+    const replyText = "Error getting response from API.";
+    repondre(replyText);
   }
 });
 zokou({
