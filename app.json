@@ -1,6 +1,6 @@
 {
-  "name":"ANDBAD MD",
-  "description":"Deploy now your bot, ANDBAD was developed by MrAndbad himself.Make sure you fill all valuables to avoid bot from sleeping. ",
+  "name":"ANDBAD-MD",
+  "description":"Best whatsapp bot created by king ANDBAD",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.imgur.com/L4U2K76.jpeg",
   "repository":"https://github.com/Mrandbad/ANDBAD-MD-V1",
@@ -13,37 +13,59 @@
       "value":".",
       "required":true
     },
+	  "ANTICALL":
+    {
+      "description":"Enter yes for your bot to reject calls",
+      "value":"yes",
+      "required":false
+    },
+  "AUTO_REACT_STATUS":
+    {
+      "description":"Enter yes for your bot to auto react status",
+      "value":"yes",
+      "required":false
+    },
+	  "AUTO_SAVE_CONTACTS":
+    {
+      "description":"Enter yes for your bot to auto save contacts",
+      "value":"no",
+      "required":false
+    },
+      "description":"Enter yes for your bot to auto reply message when you are offline",
+      "value":"yes",
+      "required":false
+    },
     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
       "required":false
-    }, "AUTO_DOWNLOAD_STATUS":
+    }, 
+	  "AUTO_DOWNLOAD_STATUS":
     {
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
     }
     ,
-     "PM_PERMIT" :
+        "PM_PERMIT" :
      {
       "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
-    }
-    ,
-    "BOT_NAME" : {
-       
-      "description":"put A name for your bot",
-      "value":" ANDBAD MD",
-      "required":false
+    },
+       "BOT_NAME" : 
+    {
+    "description":"put A name for your bot",
+    "value":"ANDBAD-MD",
+    "required":false
 
-    } ,
-     "BOT_MENU_LINKS" : {
-    
-      "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.imgur.com/s5PX2fI.mp4",
-      "required":false
+    },
+       "BOT_MENU_LINKS" : 
+   {
+    "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
+    "value":"https://i.imgur.com/L4U2K76.jpeg",
+    "required":false
        
      },
     "PUBLIC_MODE":
@@ -53,20 +75,19 @@
       "required":false
     }
 	,
-    "HEROKU_APY_KEY": {
-    "description": "insert your heroku api-key ",
-     "value":"",
-	"required" :true
+    "HEROKU_API_KEY": {
+    "description": "insert your heroku api-key (this is optionnal)",
+     "value":"", 
+     "required" :false
     },
   "HEROKU_APP_NAME": {
-    "description": "insert your heroku APP NAME (the name you wrote at the beginning)",
-     "value":"",
-	"required" :true
+    "description": "insert your heroku APP NAME (this is optionnal)",
+     "required" :false
     }  
 	  ,
     "SESSION_ID":
     {
-      "description":"put your session ID, the code you received after pairing code",   
+      "description":"put your session ID , the code you receive after scanning Qr code",   
       "value":"",
       "required":true
       
@@ -76,50 +97,60 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "𝚳𝚪 𝚫𝚴𝐃𝚩𝚫𝐃"
+    "value": "ANDBADtech"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "255783394967"
+    "value": "255621995482"
   },
     "WARN_COUNT":
   {
     "desc": "this is the limit of warn for warning commandes",
     "required": false,
-    "value": "3"
+    "value": "5"
   },
   "STARTING_BOT_MESSAGE":
   {
     "description": "if you don't want startting-bot-message put no else put yes",
     "required": true,
-    "value": "yes"
+    "value": "no"
   },
   "PRESENCE":{
     "description":"Mark your presence: 1 to indicate that you are online even if you are not. 2 to indicate that you are currently typing a message. 3 to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
-    "value":"",  
+    "value":"2",
     "required": false
+	  
   },
-  "ANTI_DELETE_MESSAGE" : {
-    "description": "if you want to enable anti delete message put yes else put no",
-    "value": "no",
+	    "AUTO_READ":{
+    "description":"Enter yes for auto read messages.",
+    "value":"no",
     "required": false
-  }
-  },
+    },
 
-  "formation": {
-		"worker": {
-			"quantity": 1,
-			"size": "basic"
-		}
-	},
-
-  "addons":[
+    "buildpacks": [
     {
-      "plan":"heroku-postgresql:essential-0"
+      "url": "heroku/nodejs"
+    },
+
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
     }
   ]
-	
-}
+  }
