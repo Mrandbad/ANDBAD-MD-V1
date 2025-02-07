@@ -19,43 +19,13 @@
       "value":"yes",
       "required":false
     },
-         "AUTO_BIO":
-    {
-      "description":"Enter yes for your bot to auto bio",
-      "value":"no",
-      "required":false
-    },
-  "AUTO_REACT_STATUS":
+      "AUTO_REACT_STATUS":
     {
       "description":"Enter yes for your bot to auto react status",
       "value":"yes",
       "required":false
     },
-	  "AUTO_SAVE_CONTACTS":
-    {
-      "description":"Enter yes for your bot to auto save contacts",
-      "value":"no",
-      "required":false
-    },
-	  "AUTO_REACT":
-    {
-      "description":"Enter yes for your bot to auto react message in all chats",
-      "value":"yes",
-      "required":false
-    },
-	  "AUDIO_REPLY":
-    {
-      "description":"Enter yes for your bot to auto reply audio in all chats",
-      "value":"yes",
-      "required":false
-    },
-	  "AUTO_REPLY":
-    {
-      "description":"Enter yes for your bot to auto reply message when you are offline",
-      "value":"yes",
-      "required":false
-    },
-    "AUTO_READ_STATUS":
+     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
@@ -112,20 +82,7 @@
       "required":true
       
     },
-    "OWNER_NAME":
-    {
     
-    "desc": "Your Name",
-    "required": false,
-    "value": "yessertech"
-  },
-    "NUMERO_OWNER":
-  {
-    
-    "desc": "Your number , dont put '+' and put you area code(exemple of togo '255')",
-    "required":false,
-    "value": "255621995482"
-  },
     "WARN_COUNT":
   {
     "desc": "this is the limit of warn for warning commandes",
