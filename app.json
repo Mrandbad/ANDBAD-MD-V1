@@ -1,6 +1,6 @@
 {
   "name":"ANDBAD-MD",
-  "description":"Best whatsapp bot created by king ANDBAD",
+  "description":"Best whatsapp bot created by mrhanstz",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.imgur.com/L4U2K76.jpeg",
   "repository":"https://github.com/Mrandbad/ANDBAD-MD-V1",
@@ -19,19 +19,10 @@
       "value":"yes",
       "required":false
     },
-  "AUTO_REACT_STATUS":
+         
+     "AUTO_REACT_STATUS":
     {
       "description":"Enter yes for your bot to auto react status",
-      "value":"yes",
-      "required":false
-    },
-	  "AUTO_SAVE_CONTACTS":
-    {
-      "description":"Enter yes for your bot to auto save contacts",
-      "value":"no",
-      "required":false
-    },
-      "description":"Enter yes for your bot to auto reply message when you are offline",
       "value":"yes",
       "required":false
     },
@@ -80,7 +71,7 @@
      "value":"", 
      "required" :false
     },
-  "HEROKU_APP_NAME": {
+   "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (this is optionnal)",
      "required" :false
     }  
@@ -97,14 +88,7 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "ANDBADtech"
-  },
-    "NUMERO_OWNER":
-  {
-    
-    "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-    "required":false,
-    "value": "255621995482"
+    "value": "MR-ANDBAD"
   },
     "WARN_COUNT":
   {
@@ -129,6 +113,12 @@
     "value":"no",
     "required": false
     },
+  "ANTI_DELETE_MESSAGE" : {
+    "description": "if you want to enable anti delete message put yes else put no",
+    "value": "no",
+        "required": false
+  }
+  },
 
     "buildpacks": [
     {
