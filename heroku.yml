@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker:   npm run 𝐂.𝚵.𝚯 𝚫𝚴𝐃𝚩𝚫𝐃
+   worker:   npm run Andbad
