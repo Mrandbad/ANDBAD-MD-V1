@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node index.js", 
     "start": "npx pm2 start index.js --attach",
-    "HansTz": "pm2 start index.js --attach --max-memory-restart 490M",
+    "Andbad": "pm2 start index.js --attach --max-memory-restart 490M",
     "kinghansmd": "pm2 start index.js --attach",
     "c": "tsc"
     },
