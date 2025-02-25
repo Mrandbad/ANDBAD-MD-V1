@@ -49,7 +49,7 @@ const date = moment().format('DD/MM/YYYY');
 │❒⁠⁠⁠⁠│▸ 3. https://chat.whatsapp.com/KQUhHDtpBxUKfhl94OlxEf
 │❒⁠⁠⁠⁠│▸ 4. https://chat.whatsapp.com/Ilh736URrxrFUqp4qhRu7L
 │❒⁠⁠⁠⁠│▸ 5. https://chat.whatsapp.com/DU79JfdnOI83ZFVAyD74Mo
-│❒⁠⁠⁠⁠│▸ 6. https://chat.whatsapp.com/IIpL6gf6dcq4ial8gaJLE9
+│❒⁠⁠⁠⁠│▸ 6. https://chat.whatsapp.com/KX34mhuzDgYEU2vD2LAnty
 │❒⁠⁠⁠⁠│▸ 7. https://chat.whatsapp.com/BfxM1Xk8aMV8kkps5NshND
 │❒⁠⁠⁠⁠│▸ *MAKE SURE YOU HAVE JOINED THIS GROUPS*
 │❒⁠⁠⁠⁠│▸ 
