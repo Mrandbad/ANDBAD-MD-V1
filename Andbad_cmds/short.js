@@ -8,7 +8,7 @@ zokou({
   nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "Search",
-  reaction: "💬"
+  reaction: "🧠"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
