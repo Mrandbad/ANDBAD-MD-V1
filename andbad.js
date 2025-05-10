@@ -532,10 +532,10 @@ async function isValidPhoneNumber(number) {
   try {
     number = number.replace(/\s+/g, '')
     // If the number starts with '+521' or '+52 1', remove the '1'
-    if (number.startsWith('+521')) {
-      number = number.replace('+521', '+52'); // Change +521 to +52
-    } else if (number.startsWith('+52') && number[4] === '1') {
-      number = number.replace('+52 1', '+52'); // Change +52 1 to +52
+    if (number.startsWith('+255')) {
+      number = number.replace('+255', '+255'); // Change +521 to +52
+    } else if (number.startsWith('+255') && number[4] === '1') {
+      number = number.replace('+255', '+255'); // Change +52 1 to +52
     }
     const parsedNumber = phoneUtil.parseAndKeepRawInput(number)
     return phoneUtil.isValidNumber(parsedNumber)
